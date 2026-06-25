@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Local environments
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Logs
+*.log
