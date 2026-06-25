@@ -91,3 +91,22 @@ The gate must produce one of three outcomes:
 | Authorized | Execution may continue under the documented plan. |
 | Blocked | Execution cannot continue until human authorization, credentials or scope are available. |
 | Rejected | Execution must not proceed because it violates constraints or governance rules. |
+
+## Handoff to Runtime Coordination Layer
+
+When the Authorization Flow result is `Authorized`, the task passes to the
+Runtime Coordination Layer.
+
+The handoff must create or update:
+
+- Task record in the Task Queue.
+- Initial event in the Event Bus.
+- State record governed by the State Manager.
+- Evidence and audit linkage when required by risk level.
+
+The handoff must preserve authorization, decision, evidence and rollback
+references before execution begins.
+
+A task with a `Blocked` or `Rejected` authorization result must not enter
+`in_progress`. Blocked work may be recorded for traceability, but it cannot
+execute until a later authorization result allows a valid state transition.
