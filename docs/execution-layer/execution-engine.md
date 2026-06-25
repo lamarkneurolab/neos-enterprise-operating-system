@@ -58,6 +58,37 @@ Verification must match the task. Examples:
 | Pull request | PR URL or number from GitHub. |
 | Workflow change | GitHub accepts push and workflow file is present. |
 
+## Runtime Coordination Layer
+
+After the Authorization Flow produces an authorized plan, runtime work passes
+through the Runtime Coordination Layer.
+
+```text
+Authorization Flow
+  -> Task Queue
+  -> Event Bus
+  -> State Manager
+  -> Execution State Log
+  -> Evidence / Audit / Rollback
+```
+
+The coordination layer does not replace authorization. It receives authorized
+work, records the task state, emits internal events, validates transitions and
+preserves auditability.
+
+The Execution Engine must not mark a task as complete unless traceability
+exists between:
+
+- The task record in the Task Queue.
+- The event record in the Event Bus.
+- The state record governed by the State Manager.
+- The state transition in the Execution State Log.
+- The linked evidence or audit record.
+
+Tasks may enter `in_progress` only after valid authorization is linked. Failed
+tasks must emit `task.failed`; completed tasks must emit `task.completed`.
+Rollback-required tasks must preserve rollback evidence before closure.
+
 ## Evidence and audit
 
 Evidence proves that execution happened. Audit records why execution was allowed
