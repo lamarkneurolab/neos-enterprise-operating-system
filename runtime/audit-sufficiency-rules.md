@@ -69,3 +69,11 @@ Audit entries should link:
 `logs/INCIDENT_LOG.md` records missing audit, missing evidence, blocked
 authorization, invalid state, boundary violations and unresolved rollback
 conditions when they affect closure or merge.
+
+## Block 9 validation linkage
+
+Audit sufficiency can be validated through `runtime/audit-validation.md` and
+`runtime/audit-trail-validation.md`.
+
+Validation must confirm that audit links evidence, authorization, decision,
+rollback and governance context when applicable.

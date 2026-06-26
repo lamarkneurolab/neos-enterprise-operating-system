@@ -24,3 +24,9 @@ This log records NEOS certification gate evaluations.
 | Date | Certification ID | Gate | Task ID | Event ID | Scope | Evidence Ref | Audit Ref | Decision Ref | Rollback Ref | Result | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | CERT-NEOS-F3-009 | Runtime Certification & Governance Gates v0.1.0 | TASK-NEOS-F3-008 | EVT-NEOS-F3-008 | Block 8 certification gates, governance matrix, readiness certifications, sufficiency rules, human authorization gates, critical decision gates and release candidate review | EVD-NEOS-F3-009 | AUD-NEOS-F3-008 | Decision Log entry for Block 8 | Revert Block 8 commit or close PR without merge | certified_with_review | Certification is documentary and remains subject to PR review and explicit Tiziano merge authorization for the specific PR. |
+
+## 2026-06-26 — Fase 3 Block 9
+
+| Date | Certification ID | Gate | Task ID | Event ID | Scope | Evidence Ref | Audit Ref | Decision Ref | Rollback Ref | Result | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-26 | CERT-NEOS-F3-010 | Runtime Testing & Validation Harness v0.1.0 | TASK-NEOS-F3-009 | EVT-NEOS-F3-009 | Block 9 testing harness, validation scenarios, test case registry, component validations, evidence validation, audit validation, regression validation and release readiness validation | EVD-NEOS-F3-010 | AUD-NEOS-F3-009 | Decision Log entry for Block 9 | Revert Block 9 commit or close PR without merge | certified_with_review | Certification is documentary and remains subject to PR review and explicit Tiziano merge authorization for the specific PR. |

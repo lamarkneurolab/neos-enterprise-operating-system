@@ -43,3 +43,13 @@ Block 8 may be recommended as `candidate_ready` only after:
 - Pull request is open against `main`.
 - No merge has been executed.
 - Tiziano has not been asked for merge authorization until review is complete.
+
+## Block 9 validation linkage
+
+Release candidate review is validated by
+`runtime/release-readiness-validation.md`.
+
+Release readiness validation must confirm required test cases, validation logs,
+test evidence, audit, regression review, certification gates, governance gates,
+blocking conditions and final recommendation before a block is considered ready
+for human review.

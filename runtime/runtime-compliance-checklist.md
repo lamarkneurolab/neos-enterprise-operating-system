@@ -42,3 +42,14 @@ If any required checklist item fails, closure is blocked. The allowed next step
 is remediation, incident registration, rollback readiness review, PR closure
 without merge or explicit human authorization when the action is allowed only by
 Tiziano.
+
+## Block 9 validation linkage
+
+Before block closure, confirm:
+
+- [ ] Required validation scenarios exist.
+- [ ] Required test cases are registered.
+- [ ] Evidence validation is complete.
+- [ ] Audit validation is complete.
+- [ ] Regression validation is complete.
+- [ ] Release readiness validation is complete when applicable.

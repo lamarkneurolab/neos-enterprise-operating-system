@@ -26,6 +26,7 @@ FASE 3 — DevOps & Execution Layer.
 8. Agent SDK
 9. Certification
 10. Governance Gates
+11. Testing & Validation Harness
 
 ## Execution principle
 
@@ -40,3 +41,14 @@ NEOS Fase 3 Block 8 defines Runtime Certification & Governance Gates v0.1.0 in
 Certification and governance gates block closure, promotion, release candidate
 approval and merge when evidence, audit, rollback, compatibility, critical
 decision review or explicit human authorization is missing.
+
+## Runtime testing and validation
+
+NEOS Fase 3 Block 9 defines Runtime Testing & Validation Harness v0.1.0 in
+`README_RUNTIME_TESTING_VALIDATION_HARNESS.md` and
+`docs/execution-layer/runtime-testing-validation-harness-v0.1.0.md`.
+
+The harness is documentary only. It defines validation scenarios, test case
+registry rules, runtime contract validation, evidence validation, audit
+validation, regression validation and release readiness validation without
+adding executable runners, dependencies, services or productive automation.

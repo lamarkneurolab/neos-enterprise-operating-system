@@ -2,7 +2,7 @@
 
 Execution engine, runtime flow, authorization, task queue, event bus,
 verification, observability, memory, SDK contracts, integration contracts,
-certification and governance gates.
+certification, governance gates, testing and validation.
 
 ## Fase 3 blocks
 
@@ -14,3 +14,4 @@ certification and governance gates.
 | Runtime Memory & Context Persistence v0.1.0 | `runtime-memory-context-persistence-v0.1.0.md` |
 | Runtime SDK & Integration Contracts v0.1.0 | `runtime-sdk-integration-contracts-v0.1.0.md` |
 | Runtime Certification & Governance Gates v0.1.0 | `runtime-certification-governance-gates-v0.1.0.md` |
+| Runtime Testing & Validation Harness v0.1.0 | `runtime-testing-validation-harness-v0.1.0.md` |

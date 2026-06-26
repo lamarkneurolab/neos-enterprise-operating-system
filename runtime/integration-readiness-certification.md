@@ -27,3 +27,13 @@ documentary, boundary-safe, evidenced, audited and rollback-ready.
 
 Any requested real external action remains blocked until separately and
 explicitly authorized by Tiziano for the exact action.
+
+## Block 9 validation linkage
+
+Integration readiness can be validated through
+`runtime/integration-contract-validation.md` and
+`runtime/runtime-contract-validation.md`.
+
+Validation must confirm that external execution remains blocked by default,
+evidence and audit are sufficient, rollback is defined and no live integration
+is activated.

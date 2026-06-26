@@ -64,3 +64,11 @@ Certification & Governance Gates v0.1.0.
 Evidence must not be invented from intention or plan. If a command, file,
 commit, push or PR has not happened, the evidence must state that it is pending,
 blocked or not applicable.
+
+## Block 9 validation linkage
+
+Evidence sufficiency can be validated through `runtime/evidence-validation.md`
+and `logs/TEST_EVIDENCE_LOG.md`.
+
+Test evidence must be specific, current, verifiable, linked to the test case or
+scenario, and linked to audit when audit is required.

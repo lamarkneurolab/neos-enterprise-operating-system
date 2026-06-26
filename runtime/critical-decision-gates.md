@@ -24,3 +24,12 @@ Critical decisions must be recorded in `logs/DECISION_LOG.md` before merge or
 release candidate approval. If a critical decision is identified after review,
 the PR remains open until the decision, evidence, audit and rollback posture are
 complete.
+
+## Block 9 validation linkage
+
+Critical decisions are validated by `runtime/governance-gate-validation.md`,
+`runtime/regression-validation.md` and
+`runtime/release-readiness-validation.md`.
+
+Validation must confirm that critical changes have decision, evidence, audit,
+authorization and rollback posture before merge readiness.

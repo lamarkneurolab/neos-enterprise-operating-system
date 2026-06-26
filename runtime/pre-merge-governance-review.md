@@ -41,3 +41,16 @@ dependencies or alter the environment.
 Merge is always blocked until Tiziano explicitly authorizes the specific pull
 request. Prior authorization for PR #5 does not apply to Block 8 or any future
 pull request.
+
+## Block 9 validation linkage
+
+Pre-merge review should include Block 9 validation artifacts when they apply:
+
+- Test case registry entry.
+- Validation scenario entry.
+- Evidence validation result.
+- Audit validation result.
+- Regression validation result.
+- Release readiness validation result.
+
+Missing required validation blocks merge readiness.

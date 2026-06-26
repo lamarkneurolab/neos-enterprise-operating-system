@@ -31,3 +31,10 @@ Any required gate that fails blocks the governed outcome. Allowed outcomes are:
 - Execute approved rollback when explicitly authorized.
 
 No gate failure may be ignored to declare closure.
+
+## Block 9 validation linkage
+
+Certification gates are validated by `runtime/certification-gate-validation.md`
+and related Block 9 validation files. Required certification outcomes should
+link test cases, validation scenarios, evidence, audit, rollback posture and
+release readiness validation when a block is prepared for closure.

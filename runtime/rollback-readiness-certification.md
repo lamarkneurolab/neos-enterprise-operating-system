@@ -33,3 +33,11 @@ change can be reversed, contained or safely left unmerged.
 If rollback readiness is missing for medium, high or critical work, closure and
 merge are blocked. If rollback is impossible, that fact must be explicitly
 documented and approved before any irreversible action is attempted.
+
+## Block 9 validation linkage
+
+Rollback readiness can be validated through `runtime/rollback-validation.md`
+and `runtime/failure-scenario-validation.md`.
+
+Validation must confirm rollback trigger, scope, prior state, evidence, audit,
+authorization owner and completion criteria.
