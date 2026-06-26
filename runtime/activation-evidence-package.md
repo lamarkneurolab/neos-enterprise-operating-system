@@ -36,3 +36,9 @@ The package must link `logs/AUDIT_TRAIL.md`, `logs/EVIDENCE_LOG.md` and
 
 Evidence is sufficient when it is specific, current, traceable, scoped to the
 request and linked to audit and decision records.
+
+## Block 13 evidence handoff
+
+The activation evidence package feeds
+`runtime/evidence-capture-before-activation.md`. Block 13 must record
+pre-activation evidence before any future go/no-go review.

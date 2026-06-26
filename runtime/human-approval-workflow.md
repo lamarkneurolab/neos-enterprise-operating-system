@@ -33,3 +33,9 @@ unaccepted or authorization is ambiguous. Escalate high and critical risk.
 
 All decisions must link activation request, decision, authorization, audit and
 evidence records.
+
+## Block 13 final approval
+
+Block 13 requires a separate human final approval check and go/no-go decision
+for the exact activation session and runtime window. Earlier approval cannot be
+reused automatically.

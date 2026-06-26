@@ -31,3 +31,8 @@ Define minimum fields for a controlled activation request.
 ## Rule
 
 An activation request is not execution authorization.
+
+## Block 13 linkage
+
+An approved request can only move to Block 13 activation protocol review. It
+does not execute and does not create an activation session automatically.

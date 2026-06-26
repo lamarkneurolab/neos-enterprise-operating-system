@@ -21,6 +21,7 @@ Activation risk review for future controlled execution.
 | Date | Risk ID | Request ID | Scope | Risk Level | Decision | Escalation | Evidence | Audit | Reviewer | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | RISK-NEOS-F3-012 | ACT-REQ-NEOS-F3-012 | Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 | medium | acceptable_for_documentary_pr_review | none | TEST-EVD-NEOS-F3-012 | AUD-NEOS-F3-012 | Codex / NEOS Runtime Governance | No execution, activation or merge authorization granted. |
+| 2026-06-26 | RISK-NEOS-F3-013 | ACT-REQ-NEOS-F3-013 | Runtime Controlled Execution Activation Protocol v0.1.0 | medium | acceptable_for_documentary_pr_review | none | PRE-ACT-EVD-NEOS-F3-013 | AUD-NEOS-F3-013 | Codex / NEOS Runtime Governance | No execution, activation, go decision or merge authorization granted. |
 
 ## v0.1.0 status
 

@@ -21,6 +21,7 @@ Controlled activation gate decisions for future execution review.
 | Date | Decision ID | Request ID | Decision | Reason | Evidence | Audit | Risk | Reviewer | Next Action |
 |---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | ACT-DEC-NEOS-F3-012 | ACT-REQ-NEOS-F3-012 | request-human-approval | PR merge requires separate explicit authorization; activation not authorized | TEST-EVD-NEOS-F3-012 | AUD-NEOS-F3-012 | RISK-NEOS-F3-012 | Codex / NEOS Runtime Governance | Open PR and keep unmerged pending explicit authorization |
+| 2026-06-26 | ACT-DEC-NEOS-F3-013 | ACT-REQ-NEOS-F3-013 | request-human-approval | PR merge and any future go decision require separate explicit authorization; activation not authorized | PRE-ACT-EVD-NEOS-F3-013 | AUD-NEOS-F3-013 | RISK-NEOS-F3-013 | Codex / NEOS Runtime Governance | Open PR and keep unmerged pending explicit authorization |
 
 ## v0.1.0 status
 

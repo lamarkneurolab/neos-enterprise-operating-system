@@ -24,3 +24,9 @@ Define the checklist required before future execution authorization.
 
 If anything changed after approval, authorization is invalid and must be
 reviewed again.
+
+## Block 13 checklist handoff
+
+After this checklist is satisfied, Block 13 must still verify activation
+preconditions, lock scope, define the execution window, capture pre-activation
+evidence and record final human go/no-go.

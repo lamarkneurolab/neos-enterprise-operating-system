@@ -31,3 +31,10 @@ risk, evidence, audit, rollback or incident plan changes.
 
 Evidence and audit must be maintained from activation request through
 post-authorization review and any future execution window.
+
+## Block 13 protocol
+
+After authorization, Block 13 must create an activation session, lock scope,
+define the execution window, capture pre-activation evidence, record
+pre-activation audit, confirm rollback readiness and obtain final human
+go/no-go before any future controlled execution can be considered.

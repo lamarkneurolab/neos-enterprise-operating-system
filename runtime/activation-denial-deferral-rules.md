@@ -33,3 +33,9 @@ decision.
 
 Return to dry-run simulation when scope, risk, PR, branch, head SHA, commit or
 requested action changes.
+
+## Return from Block 13
+
+Block 13 must return to denial, deferral or block review when activation
+preconditions fail, scope changes, runtime window expires or go/no-go is not
+explicit.

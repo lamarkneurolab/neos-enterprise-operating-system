@@ -21,3 +21,8 @@ Define allowed activation decisions.
 
 No decision executes anything by itself. Even approval requires the exact
 future execution scope and post-authorization controls to remain valid.
+
+## Block 13 transition
+
+`approve-for-future-execution` means the request may be reviewed under
+`runtime/controlled-execution-activation-protocol.md`; it is not a go decision.

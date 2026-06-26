@@ -41,3 +41,11 @@ Authorization is invalid when any of these changes:
 
 Every authorization, denial, deferral, block or abort decision must be recorded
 in `logs/EXECUTION_AUTHORIZATION_LOG.md` and linked to audit and decision logs.
+
+## Block 13 transition
+
+Execution authorization is followed by the Block 13 controlled execution
+activation protocol. Authorization does not execute by itself and remains
+insufficient without activation session, scope lock, execution window,
+pre-activation evidence, audit record, rollback readiness and explicit human
+go/no-go.

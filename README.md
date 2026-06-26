@@ -30,6 +30,7 @@ FASE 3 — DevOps & Execution Layer.
 12. Orchestration Readiness & Execution Playbooks
 13. Orchestration Dry-Run & Simulation Layer
 14. Controlled Activation Gate & Execution Authorization Layer
+15. Controlled Execution Activation Protocol
 
 ## Execution principle
 
@@ -88,3 +89,14 @@ and
 Dry-run passed does not authorize execution. Activation request does not
 authorize execution. Authorization gate does not execute. Execution
 authorization does not execute by itself.
+
+## Runtime controlled execution activation protocol
+
+NEOS Fase 3 Block 13 defines Runtime Controlled Execution Activation Protocol
+v0.1.0 in
+`README_RUNTIME_CONTROLLED_EXECUTION_ACTIVATION_PROTOCOL.md` and
+`docs/execution-layer/runtime-controlled-execution-activation-protocol-v0.1.0.md`.
+
+Authorization approved does not execute. Activation protocol does not execute.
+Execution remains blocked until explicit human go/no-go exists for the exact PR,
+branch, head SHA, commit, scope, action and runtime window.
