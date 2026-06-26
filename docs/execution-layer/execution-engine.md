@@ -68,6 +68,8 @@ Authorization Flow
   -> Task Queue
   -> Event Bus
   -> State Manager
+  -> Runtime Observability
+  -> Audit Trail / Incident Records
   -> Execution State Log
   -> Evidence / Audit / Rollback
 ```
@@ -82,12 +84,47 @@ exists between:
 - The task record in the Task Queue.
 - The event record in the Event Bus.
 - The state record governed by the State Manager.
+- The observability event when the execution is inspected.
+- The audit or incident record when required.
 - The state transition in the Execution State Log.
 - The linked evidence or audit record.
 
 Tasks may enter `in_progress` only after valid authorization is linked. Failed
 tasks must emit `task.failed`; completed tasks must emit `task.completed`.
 Rollback-required tasks must preserve rollback evidence before closure.
+
+## Runtime Observability and Audit Trail
+
+Runtime Observability records, classifies and inspects execution facts. It does
+not authorize work, execute actions, retry failed work, mutate state or perform
+rollback by itself.
+
+The Execution Engine must preserve links between:
+
+- `runtime/observability.md`
+- `runtime/audit-trail.md`
+- `runtime/health-signals.md`
+- `runtime/incident-records.md`
+- `logs/AUDIT_TRAIL.md`
+- `logs/INCIDENT_LOG.md`
+
+Medium, high and critical execution events must link evidence. Failed, blocked,
+degraded or manual-intervention conditions must link an incident record.
+Rollback-related events must link rollback evidence before closure.
+
+## Runtime Review Checklist
+
+Before an execution is considered closed, review:
+
+1. Was the task authorized?
+2. Was the state transition valid?
+3. Was the event recorded?
+4. Was evidence created?
+5. Was audit recorded?
+6. Was there an incident?
+7. Was there a rollback?
+8. Is the final state coherent?
+9. Was the log updated?
 
 ## Evidence and audit
 
@@ -98,6 +135,7 @@ Evidence belongs in `logs/EVIDENCE_LOG.md`.
 Material decisions belong in `logs/DECISION_LOG.md`.
 Operational audit events belong in `logs/AUDIT_TRAIL.md` when the action has
 runtime significance beyond documentation.
+Runtime incidents belong in `logs/INCIDENT_LOG.md`.
 
 ## Rollback
 
@@ -121,6 +159,9 @@ Every execution plan must declare one of:
 | Validation failure | Stop, report failure and do not claim completion. |
 | Partial execution | Record completed steps, current state and rollback path. |
 | Push rejected | Preserve local commit, report remote error and do not open an empty PR. |
+| Missing evidence | Stop closure and record `missing_evidence` incident. |
+| Missing audit entry | Stop closure and record `missing_audit_entry` incident. |
+| Invalid state transition | Block transition and record `invalid_state_transition` incident. |
 
 ## Execution state machine
 

@@ -56,12 +56,19 @@ Authorization Flow
   -> Task Queue
   -> Event Bus
   -> State Manager
+  -> Runtime Observability
+  -> Audit Trail / Incident Records
   -> Execution State Log
   -> Evidence / Audit / Rollback
 ```
 
 The layer does not replace authorization. It records authorized work, emits
 events, validates state transitions and preserves auditability.
+
+Block 5 adds Runtime Observability and Audit Trail after the Block 4
+coordination layer. This does not replace the Task Queue, Event Bus or State
+Manager. It adds inspection, health, incident and audit records that link back
+to Block 4 task, event and state records.
 
 ## Task Queue
 
@@ -95,6 +102,9 @@ Required rules:
 - Every event must link back to a `task_id` unless it is a system-level audit
   event.
 - Critical events must link evidence or audit.
+- Block 5 inspection may query events by event identity, task identity,
+  component, severity, timestamp, state transition, audit, evidence and incident
+  references.
 
 ## State Manager
 
@@ -151,6 +161,22 @@ Required links:
 - `linked_evidence` connects the task or event to `logs/EVIDENCE_LOG.md`.
 - `audit_reference` connects events to audit records when required.
 - `evidence_reference` is required for medium, high and critical work.
+- `incident_reference` connects failed, blocked, degraded or manual
+  intervention conditions to `logs/INCIDENT_LOG.md`.
+
+## Block 5 observability linkage
+
+Runtime Observability and Audit Trail extend Block 4 with review records:
+
+| Block 5 record | Required Block 4 link |
+|---|---|
+| Observability event | `task_id`, `event_id`, state before and state after when applicable. |
+| Audit entry | `task_id`, `event_id`, authorization, decision and evidence references. |
+| Health signal | Runtime component and linked task when applicable. |
+| Incident record | `task_id`, `event_id`, evidence, audit and rollback references. |
+
+Observability records, classifies and inspects. It must not execute actions or
+change task state by itself.
 
 ## Required lifecycle
 
