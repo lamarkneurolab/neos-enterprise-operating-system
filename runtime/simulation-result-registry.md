@@ -31,3 +31,9 @@ Registry entries are recorded in
 
 Simulation result registry status does not authorize activation. Activation
 requires separate human authorization for the exact future scope.
+
+## Relationship with activation requests
+
+Simulation registry entries may be linked from activation requests. A changed
+simulation result requires activation request review and may require a new
+simulation.

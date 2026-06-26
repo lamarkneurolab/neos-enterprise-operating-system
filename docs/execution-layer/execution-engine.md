@@ -288,6 +288,37 @@ Before any future activation, the dry-run and simulation layer must be
 validated. Dry-run does not execute, simulation does not authorize, no-op does
 not modify real state and simulation passed does not mean activation approved.
 
+## Runtime Controlled Activation Gate and Execution Authorization Layer
+
+Runtime Controlled Activation Gate and Execution Authorization Layer defines
+the documentary gate required before any future execution can be authorized.
+
+The Execution Engine must preserve links between:
+
+- `runtime/controlled-activation-gate.md`
+- `runtime/execution-authorization-layer.md`
+- `runtime/activation-request-model.md`
+- `runtime/activation-decision-matrix.md`
+- `runtime/activation-scope-definition.md`
+- `runtime/risk-acceptance-rules.md`
+- `runtime/human-approval-workflow.md`
+- `runtime/pre-execution-authorization-checklist.md`
+- `runtime/activation-evidence-package.md`
+- `runtime/activation-audit-requirements.md`
+- `runtime/activation-denial-deferral-rules.md`
+- `runtime/emergency-stop-abort-conditions.md`
+- `runtime/post-authorization-control-rules.md`
+- `logs/ACTIVATION_REQUEST_LOG.md`
+- `logs/EXECUTION_AUTHORIZATION_LOG.md`
+- `logs/RISK_ACCEPTANCE_LOG.md`
+- `logs/ACTIVATION_DECISION_LOG.md`
+- `logs/EMERGENCY_STOP_ABORT_LOG.md`
+
+Before any future execution, there must be a controlled activation gate,
+execution authorization layer, activation evidence package and explicit human
+authorization for the exact scope, PR, branch, head SHA, commit and action.
+The gate does not execute and authorization does not execute by itself.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -320,6 +351,9 @@ Before an execution is considered closed, review:
 26. Has dry-run simulation been completed before any future activation request?
 27. Are no-op, simulated evidence, simulated audit, simulated rollback and incident simulation records linked?
 28. Is activation blocked unless explicit human authorization exists for the exact future scope?
+29. Is the controlled activation gate complete before any future execution request?
+30. Is the activation evidence package linked to audit, decision and risk records?
+31. Is execution authorization scoped to the exact PR, branch, head SHA, commit and action?
 
 ## Evidence and audit
 
@@ -352,6 +386,12 @@ Simulation results belong in `logs/SIMULATION_RESULT_REGISTRY_LOG.md`.
 Preflight checks belong in `logs/PREFLIGHT_CHECK_LOG.md`.
 Simulated rollback belongs in `logs/SIMULATED_ROLLBACK_LOG.md`.
 Incident simulation belongs in `logs/INCIDENT_SIMULATION_LOG.md`.
+Activation requests belong in `logs/ACTIVATION_REQUEST_LOG.md`.
+Execution authorization belongs in `logs/EXECUTION_AUTHORIZATION_LOG.md`.
+Risk acceptance belongs in `logs/RISK_ACCEPTANCE_LOG.md`.
+Activation decisions belong in `logs/ACTIVATION_DECISION_LOG.md`.
+Emergency stop and abort reviews belong in
+`logs/EMERGENCY_STOP_ABORT_LOG.md`.
 
 ## Rollback
 

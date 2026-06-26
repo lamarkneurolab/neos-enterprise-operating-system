@@ -43,3 +43,8 @@ simulation result registry.
 ## Blocking criteria
 
 Open high or critical simulated incidents block activation review.
+
+## Relationship with emergency stop and abort
+
+Incident simulation feeds Block 12 emergency stop and abort conditions. Open or
+unresolved incident risk blocks activation authorization.

@@ -64,3 +64,9 @@ conditions and manual intervention requirements.
 | Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | INC-NEOS-F3-011 | info | runtime-orchestration-dry-run-simulation-layer | TASK-NEOS-F3-011 | EVT-NEOS-F3-011 | Block 11 dry-run simulation, preflight, simulated rollback, simulated evidence, simulated audit and incident simulation logs initialized; no runtime incident recorded during documentation baseline. Merge, dry-run execution and activation remain blocked until explicit authorization for the specific scope. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-012 | AUD-NEOS-F3-011 | closed |
+
+## Initial Block 12 status
+
+| Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-26 | INC-NEOS-F3-012 | info | runtime-controlled-activation-gate-execution-authorization-layer | TASK-NEOS-F3-012 | EVT-NEOS-F3-012 | Block 12 activation request, execution authorization, risk acceptance, activation decision and emergency stop logs initialized; no runtime incident recorded during documentation baseline. Merge, execution and activation remain blocked until explicit authorization for the specific scope. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-013 | AUD-NEOS-F3-012 | closed |

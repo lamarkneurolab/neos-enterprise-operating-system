@@ -37,3 +37,8 @@ Simulated evidence is referenced from `logs/DRY_RUN_SIMULATION_LOG.md` and
 
 Simulated evidence is sufficient when it is specific, current, traceable,
 clearly labeled as simulated and linked to simulated audit.
+
+## Relationship with activation evidence package
+
+Simulated evidence may be included in the activation evidence package, but it
+does not replace evidence required for future authorized execution.

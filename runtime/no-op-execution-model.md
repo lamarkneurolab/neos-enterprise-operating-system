@@ -51,3 +51,9 @@ No-op result may be `simulated_success`, `simulated_failure`,
 No-op is blocked when a step requires real credentials, external activation,
 permission changes, secrets, dependencies, services, agents or destructive
 actions.
+
+## Relationship with activation authorization
+
+No-op review may inform activation scope, but no-op success does not authorize
+execution. Any future execution requires the controlled activation gate and
+explicit human authorization.

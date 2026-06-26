@@ -30,3 +30,8 @@ Preflight fails and blocks dry-run when:
 ## Output
 
 Preflight output is recorded in `logs/PREFLIGHT_CHECK_LOG.md`.
+
+## Relationship with pre-execution authorization
+
+Preflight checks feed the Block 12 pre-execution authorization checklist.
+Passing preflight does not authorize execution.

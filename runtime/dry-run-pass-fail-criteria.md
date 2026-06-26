@@ -36,3 +36,8 @@ classify the result as pass, fail or blocked.
 ## No automatic authorization
 
 No dry-run result authorizes activation automatically.
+
+## Relationship with activation gate
+
+Only `PASS` may be considered by the controlled activation gate. `FAIL`,
+`BLOCKED` and `INCONCLUSIVE` prevent approval until remediated.

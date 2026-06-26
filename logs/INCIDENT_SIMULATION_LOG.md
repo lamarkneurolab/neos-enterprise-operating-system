@@ -22,6 +22,7 @@ blocking status.
 | Date | Simulated Incident ID | Scope | Trigger | Severity | Response | Evidence Reference | Audit Reference | Status | Reviewer | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | SIM-INC-NEOS-F3-011 | Runtime Orchestration Dry-Run & Simulation Layer v0.1.0 | Activation attempted from simulation without authorization | medium | Block activation; require explicit future authorization | TEST-EVD-NEOS-F3-011 | AUD-NEOS-F3-011 | contained | Codex / NEOS Runtime Governance | Incident simulation model documented; no real incident or activation. |
+| 2026-06-26 | SIM-INC-NEOS-F3-012 | Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 | Execution attempted from activation request without authorization | high | Block execution; require explicit future authorization | TEST-EVD-NEOS-F3-012 | AUD-NEOS-F3-012 | contained | Codex / NEOS Runtime Governance | Emergency stop and abort model documented; no real incident or execution. |
 
 ## v0.1.0 status
 

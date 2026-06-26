@@ -34,3 +34,8 @@ completion criteria or human escalation condition is missing.
 ## Log relationship
 
 Simulated rollback reviews are recorded in `logs/SIMULATED_ROLLBACK_LOG.md`.
+
+## Relationship with activation rollback controls
+
+Simulated rollback may support an activation request only when rollback scope,
+evidence and audit are linked to the activation evidence package.

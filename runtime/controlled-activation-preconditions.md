@@ -38,3 +38,9 @@ rollback uncertainty, audit gap, evidence gap or incident escalation.
 Before any future activation-focused block, NEOS must have completed dry-run
 simulation review, documented residual risks and recorded explicit human
 authorization requirements.
+
+## Relationship with Block 12
+
+Block 12 formalizes these preconditions into controlled activation gate,
+activation request, risk acceptance, evidence package, audit requirements and
+execution authorization records.

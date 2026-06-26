@@ -29,6 +29,7 @@ FASE 3 — DevOps & Execution Layer.
 11. Testing & Validation Harness
 12. Orchestration Readiness & Execution Playbooks
 13. Orchestration Dry-Run & Simulation Layer
+14. Controlled Activation Gate & Execution Authorization Layer
 
 ## Execution principle
 
@@ -75,3 +76,15 @@ v0.1.0 in `README_RUNTIME_ORCHESTRATION_DRY_RUN_SIMULATION_LAYER.md` and
 
 Dry-run does not execute. Simulation does not authorize. No-op does not modify
 real state. Simulation passed does not mean activation approved.
+
+## Runtime controlled activation gate and execution authorization
+
+NEOS Fase 3 Block 12 defines Runtime Controlled Activation Gate & Execution
+Authorization Layer v0.1.0 in
+`README_RUNTIME_CONTROLLED_ACTIVATION_GATE_EXECUTION_AUTHORIZATION_LAYER.md`
+and
+`docs/execution-layer/runtime-controlled-activation-gate-execution-authorization-layer-v0.1.0.md`.
+
+Dry-run passed does not authorize execution. Activation request does not
+authorize execution. Authorization gate does not execute. Execution
+authorization does not execute by itself.
