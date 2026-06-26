@@ -27,6 +27,7 @@ FASE 3 — DevOps & Execution Layer.
 9. Certification
 10. Governance Gates
 11. Testing & Validation Harness
+12. Orchestration Readiness & Execution Playbooks
 
 ## Execution principle
 
@@ -52,3 +53,15 @@ The harness is documentary only. It defines validation scenarios, test case
 registry rules, runtime contract validation, evidence validation, audit
 validation, regression validation and release readiness validation without
 adding executable runners, dependencies, services or productive automation.
+
+## Runtime orchestration readiness and execution playbooks
+
+NEOS Fase 3 Block 10 defines Runtime Orchestration Readiness & Execution
+Playbooks v0.1.0 in
+`README_RUNTIME_ORCHESTRATION_READINESS_EXECUTION_PLAYBOOKS.md` and
+`docs/execution-layer/runtime-orchestration-readiness-execution-playbooks-v0.1.0.md`.
+
+Readiness does not authorize execution. Playbooks do not authorize execution.
+Orchestration eligibility does not mean orchestration approval. Future
+orchestration requires validation, evidence, audit, rollback readiness and
+specific human authorization when applicable.

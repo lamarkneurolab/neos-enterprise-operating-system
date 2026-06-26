@@ -92,3 +92,11 @@ Critical Decision Escalation.
 - [ ] Gates linked.
 - [ ] Regression impact reviewed.
 - [ ] No executable harness introduced.
+
+## Relationship with orchestration readiness
+
+Testing and validation harness outputs may support orchestration readiness
+review, but they do not authorize orchestration. Future controlled
+orchestration requires validation-before-execution, evidence sufficiency, audit
+sufficiency, rollback readiness, incident response mapping and human
+authorization when applicable.

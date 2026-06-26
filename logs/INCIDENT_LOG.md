@@ -52,3 +52,9 @@ conditions and manual intervention requirements.
 | Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | INC-NEOS-F3-009 | info | runtime-testing-validation-harness | TASK-NEOS-F3-009 | EVT-NEOS-F3-009 | Block 9 testing, validation, evidence, audit, regression and release readiness validation logs initialized; no runtime incident recorded during documentation baseline. Merge remains blocked until explicit Tiziano authorization for the specific PR. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-010 | AUD-NEOS-F3-009 | closed |
+
+## Initial Block 10 status
+
+| Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-26 | INC-NEOS-F3-010 | info | runtime-orchestration-readiness-execution-playbooks | TASK-NEOS-F3-010 | EVT-NEOS-F3-010 | Block 10 orchestration readiness, execution playbook and incident response playbook logs initialized; no runtime incident recorded during documentation baseline. Merge and execution remain blocked until explicit authorization for the specific scope. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-011 | AUD-NEOS-F3-010 | closed |

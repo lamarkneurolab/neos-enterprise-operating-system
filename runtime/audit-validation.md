@@ -73,3 +73,9 @@ Critical Decision Escalation.
 - [ ] Rollback linked when applicable.
 - [ ] Decision linked when applicable.
 - [ ] Staleness checked.
+
+## Relationship with audit playbooks
+
+Audit validation must confirm that future orchestration decisions preserve
+traceability across authorization, evidence, rollback, incident and outcome
+records. Missing or ambiguous audit blocks readiness, approval and closure.

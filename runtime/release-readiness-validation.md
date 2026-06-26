@@ -77,3 +77,11 @@ Escalation.
 - [ ] Certification gates reviewed.
 - [ ] Governance gates reviewed.
 - [ ] Final recommendation recorded.
+
+## Relationship with orchestration readiness
+
+Release readiness may be an input to release-to-orchestration review, but it
+does not approve orchestration. A future capability must still satisfy
+`runtime/release-to-orchestration-criteria.md`, validation-before-execution,
+evidence sufficiency, audit sufficiency, rollback documentation, incident
+response mapping and required human authorization.
