@@ -39,6 +39,8 @@ Included:
 - Memory Audit Linkage.
 - Context Retention Rules.
 - Memory Review Checklist.
+- SDK and integration context linkage when contract use persists or reuses
+  runtime context.
 
 ## Non-goals
 
@@ -76,6 +78,10 @@ Authorization Flow
 Runtime Memory records context boundaries. Context Persistence records
 references to governed facts. Execution Snapshots preserve checkpoints. Resume
 and recovery are review flows, not automatic execution.
+
+SDK and integration contracts may reference memory only through governed
+context records. They must not persist secrets, credentials, tokens,
+permissions, stale context, revoked context or unsupported assumptions.
 
 ## Runtime Memory Contract
 

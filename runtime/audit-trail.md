@@ -51,6 +51,8 @@ Audit entries must use stable references to:
 - `logs/INCIDENT_LOG.md`
 - `logs/MEMORY_LOG.md`
 - `logs/CONTEXT_SNAPSHOT_LOG.md`
+- `logs/SDK_CONTRACT_LOG.md`
+- `logs/INTEGRATION_CONTRACT_LOG.md`
 
 ## Audit triggers
 
@@ -66,6 +68,9 @@ Create or link an audit entry when:
 - Persisted context is validated, deprecated, revoked or archived.
 - Resume or recovery is approved, blocked or marked for review.
 - A snapshot becomes the basis for a recovery decision.
+- A Runtime SDK contract is added, versioned, superseded or revoked.
+- An integration contract changes entry, exit, failure, rollback or external
+  boundary rules.
 
 ## Rules
 
@@ -78,6 +83,8 @@ Create or link an audit entry when:
   incident type `missing_audit_entry`.
 - Memory affecting resume, recovery, rollback or incidents must link audit.
 - Restricted, high or critical memory requires audit review before reuse.
+- SDK and integration contract changes that affect compatibility, external
+  boundaries or rollback must link audit.
 
 ## Non-goals
 

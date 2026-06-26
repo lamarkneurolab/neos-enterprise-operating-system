@@ -83,6 +83,11 @@ NEOS must not remember as operational truth:
 - Memory affecting incidents must link audit.
 - Stale, deprecated or revoked memory must not be reused without review.
 - Restricted memory requires explicit authorization before persistence or reuse.
+- SDK and integration contract use may reference memory only when context is
+  validated, current, evidenced and audited.
+- SDK and integration contract use must not persist secrets, credentials,
+  tokens, permissions, stale context, revoked context or unsupported
+  assumptions.
 
 ## Non-goals
 

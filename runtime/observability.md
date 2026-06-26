@@ -61,6 +61,9 @@ Runtime Observability makes execution reviewable across:
   evidence and audit.
 - Stale, deprecated or revoked context must be inspectable before it can block
   resume or recovery.
+- SDK and integration contract activity must be inspectable when it affects
+  runtime state, compatibility, external boundaries, evidence, audit or
+  rollback.
 
 ## Review fields
 
@@ -80,6 +83,8 @@ Runtime review may inspect observability by:
 - `rollback_ref`
 - `context_id`
 - `snapshot_id`
+- `contract_id`
+- `integration_id`
 
 ## Non-goals
 

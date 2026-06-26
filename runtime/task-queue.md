@@ -55,6 +55,8 @@ the link between authorization, execution status, evidence, audit and rollback.
 - Medium, high and critical tasks must link evidence.
 - Failed tasks must emit `task.failed`.
 - Completed tasks must emit `task.completed`.
+- SDK and integration contract work must be represented as a task when it
+  changes runtime state, compatibility, evidence, audit or rollback posture.
 
 ## Traceability
 
@@ -67,6 +69,7 @@ Every task should preserve links to:
 - Evidence log entry.
 - State transition records.
 - Rollback status.
+- SDK or integration contract reference when applicable.
 
 ## Non-goals
 
