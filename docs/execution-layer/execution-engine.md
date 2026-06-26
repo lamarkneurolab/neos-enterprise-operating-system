@@ -70,6 +70,8 @@ Authorization Flow
   -> State Manager
   -> Runtime Observability
   -> Audit Trail / Incident Records
+  -> Runtime Memory / Context Persistence
+  -> Execution Snapshots
   -> Execution State Log
   -> Evidence / Audit / Rollback
 ```
@@ -86,6 +88,7 @@ exists between:
 - The state record governed by the State Manager.
 - The observability event when the execution is inspected.
 - The audit or incident record when required.
+- The memory or snapshot record when execution context is persisted or reused.
 - The state transition in the Execution State Log.
 - The linked evidence or audit record.
 
@@ -112,6 +115,30 @@ Medium, high and critical execution events must link evidence. Failed, blocked,
 degraded or manual-intervention conditions must link an incident record.
 Rollback-related events must link rollback evidence before closure.
 
+## Runtime Memory and Context Persistence
+
+Runtime Memory records the governed context that may be considered for later
+review, resume or recovery. Context Persistence records references to validated
+runtime facts. Execution Snapshots preserve auditable checkpoints.
+
+The Execution Engine must not resume or recover execution only because memory
+exists. Resume or recovery may be considered only when persisted context is
+valid, current, authorized, evidenced and auditable.
+
+The Execution Engine must preserve links between:
+
+- `runtime/memory.md`
+- `runtime/context-persistence.md`
+- `runtime/execution-snapshots.md`
+- `runtime/context-resume.md`
+- `runtime/state-recovery.md`
+- `logs/MEMORY_LOG.md`
+- `logs/CONTEXT_SNAPSHOT_LOG.md`
+
+Stale, deprecated, revoked, unaudited or prohibited memory must block resume
+until review. Context involving open high or critical incidents must not be
+treated as resumable without explicit review.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -125,6 +152,9 @@ Before an execution is considered closed, review:
 7. Was there a rollback?
 8. Is the final state coherent?
 9. Was the log updated?
+10. Was persisted context reviewed before reuse?
+11. Was a snapshot created when resume or recovery may be needed?
+12. Are memory retention and risk levels documented?
 
 ## Evidence and audit
 
@@ -136,6 +166,8 @@ Material decisions belong in `logs/DECISION_LOG.md`.
 Operational audit events belong in `logs/AUDIT_TRAIL.md` when the action has
 runtime significance beyond documentation.
 Runtime incidents belong in `logs/INCIDENT_LOG.md`.
+Runtime memory belongs in `logs/MEMORY_LOG.md`.
+Execution snapshots belong in `logs/CONTEXT_SNAPSHOT_LOG.md`.
 
 ## Rollback
 
@@ -162,6 +194,8 @@ Every execution plan must declare one of:
 | Missing evidence | Stop closure and record `missing_evidence` incident. |
 | Missing audit entry | Stop closure and record `missing_audit_entry` incident. |
 | Invalid state transition | Block transition and record `invalid_state_transition` incident. |
+| Invalid memory reuse | Block resume and record memory review evidence. |
+| Missing snapshot evidence | Block recovery and record missing evidence. |
 
 ## Execution state machine
 

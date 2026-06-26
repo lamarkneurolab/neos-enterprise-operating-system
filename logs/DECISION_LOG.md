@@ -8,3 +8,4 @@
 | 2026-06-25 | Formalize NEOS Block 3: Runtime Authorization & Execution Flow v0.1.0 | Approved | Tiziano | User instruction to implement Block 3 on codex/runtime-authorization-execution-flow-v0.1.0 |
 | 2026-06-25 | Establish NEOS Block 4: Task Queue, Event Bus & State Manager v0.1.0 as the minimum runtime coordination layer | Approved | Tiziano | User instruction to implement Block 4 |
 | 2026-06-25 | Establish NEOS Block 5: Runtime Observability & Audit Trail v0.1.0 as the minimum runtime inspection, audit, health and incident layer | Approved | Tiziano | User instruction to implement Block 5 on codex/runtime-observability-audit-trail-v0.1.0 |
+| 2026-06-26 | Establish NEOS Block 6: Runtime Memory & Context Persistence v0.1.0 as the minimum runtime memory, context persistence, snapshot, resume and recovery layer | Approved | Tiziano | User instruction to implement Block 6 on codex/runtime-memory-context-persistence-v0.1.0 |

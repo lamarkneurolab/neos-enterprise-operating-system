@@ -49,3 +49,22 @@ authorization, decisions, evidence, incidents and rollback.
 | `result` | Documentation baseline created and linked. |
 | `risk_level` | `medium` |
 | `notes` | No business agents, destructive changes, permission changes, secret administration or automatic merge. |
+
+## 2026-06-26 — Fase 3 Block 6
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-F3-006` |
+| `timestamp` | `2026-06-26` |
+| `runtime_component` | `runtime-memory-context-persistence` |
+| `task_id` | `TASK-NEOS-F3-006` |
+| `event_id` | `EVT-NEOS-F3-006` |
+| `action` | Establish Runtime Memory & Context Persistence v0.1.0 documentary layer. |
+| `authorization_ref` | User authorization to implement Block 6. |
+| `decision_ref` | Decision Log entry for Block 6. |
+| `evidence_ref` | `EVD-NEOS-F3-007` |
+| `incident_ref` | `INC-NEOS-F3-006` |
+| `rollback_ref` | Revert Block 6 commit or close PR without merge. |
+| `result` | Documentation baseline created and linked. |
+| `risk_level` | `medium` |
+| `notes` | No business agents, databases, services, destructive changes, permission changes, secret administration, dependency installation or automatic merge. |

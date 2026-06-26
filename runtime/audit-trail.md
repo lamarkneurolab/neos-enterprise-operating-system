@@ -18,6 +18,8 @@ Audit Trail preserves a reviewable path between:
 - Evidence.
 - Incident records.
 - Rollback notes.
+- Runtime memory records.
+- Context snapshots.
 
 ## Minimum audit entry
 
@@ -47,6 +49,8 @@ Audit entries must use stable references to:
 - `logs/EXECUTION_STATE_LOG.md`
 - `logs/AUDIT_TRAIL.md`
 - `logs/INCIDENT_LOG.md`
+- `logs/MEMORY_LOG.md`
+- `logs/CONTEXT_SNAPSHOT_LOG.md`
 
 ## Audit triggers
 
@@ -59,6 +63,9 @@ Create or link an audit entry when:
 - Rollback is requested, completed or fails.
 - A runtime component is unavailable.
 - Manual intervention is required.
+- Persisted context is validated, deprecated, revoked or archived.
+- Resume or recovery is approved, blocked or marked for review.
+- A snapshot becomes the basis for a recovery decision.
 
 ## Rules
 
@@ -69,6 +76,8 @@ Create or link an audit entry when:
 - Rollback-related audit entries must link rollback evidence.
 - Missing audit entries for required runtime actions must be treated as an
   incident type `missing_audit_entry`.
+- Memory affecting resume, recovery, rollback or incidents must link audit.
+- Restricted, high or critical memory requires audit review before reuse.
 
 ## Non-goals
 
