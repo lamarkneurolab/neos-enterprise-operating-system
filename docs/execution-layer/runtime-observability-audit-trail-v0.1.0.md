@@ -335,3 +335,19 @@ Block 5 v0.1.0 is complete when:
 13. A non-empty commit is created.
 14. A Draft PR is opened for human review.
 15. No automatic merge is performed.
+
+## Block 8 certification linkage
+
+Block 8 adds audit sufficiency and governance gate review over runtime
+observability and audit trail work.
+
+Any observability or audit change that affects runtime governance must pass:
+
+- `runtime/audit-sufficiency-rules.md`
+- `runtime/evidence-sufficiency-rules.md`
+- `runtime/governance-gate-matrix.md`
+- `runtime/pre-merge-governance-review.md`
+
+Missing audit for a governance-relevant action blocks closure and merge until
+the audit entry links action, authorization, decision, evidence, incident and
+rollback context when applicable.

@@ -32,3 +32,29 @@ and rollback rule.
 - No external system is modified.
 - No database or service is created.
 - No business agent integration is created.
+
+## Block 8 certification requirement
+
+Integration contract changes must pass the following Block 8 gates before
+closure or merge:
+
+- Integration Readiness.
+- Integration Contract Compliance.
+- Evidence Sufficiency.
+- Audit Sufficiency.
+- Rollback Readiness.
+- Human Authorization Requirement before merge or any external action.
+- Critical Decision Escalation when boundaries, data rules, compatibility or
+  rollback posture change.
+
+Required logs:
+
+- `logs/INTEGRATION_CONTRACT_LOG.md`
+- `logs/CERTIFICATION_LOG.md`
+- `logs/GOVERNANCE_GATE_LOG.md`
+- `logs/EVIDENCE_LOG.md`
+- `logs/AUDIT_TRAIL.md`
+
+Real external execution remains blocked by default. Any live connector,
+service, workflow, notification, job or external side effect requires explicit
+Tiziano authorization for the exact action.

@@ -74,3 +74,14 @@ snapshots, decisions, evidence, audit, incidents and rollback references.
 - No database schema is introduced.
 - No external persistence service is introduced.
 - No automated long-term retention system is introduced.
+
+## Block 8 certification requirement
+
+Context persistence changes must pass Memory Safety, Evidence Sufficiency,
+Audit Sufficiency and Rollback Readiness Certification when persisted context
+affects execution readiness, integration readiness, rollback, incident handling
+or release candidate review.
+
+Context that is stale, deprecated, revoked, unaudited, unsupported or linked to
+an unresolved high or critical incident blocks resume, recovery, closure and
+merge until review is complete.

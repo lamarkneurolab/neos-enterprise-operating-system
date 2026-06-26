@@ -91,3 +91,11 @@ Create or link an audit entry when:
 - No external audit system is implemented.
 - No database or append-only ledger is introduced.
 - No permission or secret management is changed.
+
+## Block 8 certification requirement
+
+Audit Trail changes must pass `runtime/audit-sufficiency-rules.md`.
+
+Required audit cannot be replaced by unsupported claims. Missing audit for a
+governance-relevant certification, human authorization, critical decision,
+rollback, incident or release candidate review blocks closure and merge.

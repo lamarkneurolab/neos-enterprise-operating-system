@@ -95,3 +95,11 @@ NEOS must not remember as operational truth:
 - No database, cache or vector index is introduced.
 - No business agent memory is created.
 - No secret, credential, token or permission is persisted.
+
+## Block 8 certification requirement
+
+Memory changes and memory reuse must pass Memory Safety, Evidence Sufficiency,
+Audit Sufficiency and Rollback Readiness Certification when memory affects
+execution, integration, rollback, incident handling or release candidate
+review. Stale, revoked, unaudited or unsupported memory blocks closure and
+merge.

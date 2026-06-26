@@ -225,3 +225,22 @@ Status: documentary baseline for review.
 Canonical source: GitHub.
 
 Official source format: Markdown.
+
+## Block 8 certification linkage
+
+Block 8 adds certification and governance gates over SDK and integration
+contracts without changing the Block 7 contract baseline.
+
+SDK and integration changes must pass:
+
+- `runtime/certification-gates.md`
+- `runtime/governance-gate-matrix.md`
+- `runtime/integration-readiness-certification.md`
+- `runtime/evidence-sufficiency-rules.md`
+- `runtime/audit-sufficiency-rules.md`
+- `runtime/human-authorization-gates.md`
+- `runtime/critical-decision-gates.md`
+
+Breaking compatibility, external boundary changes, live integration activation
+or missing rollback readiness blocks merge until the required decision,
+evidence, audit and authorization are documented.

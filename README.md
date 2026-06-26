@@ -25,7 +25,18 @@ FASE 3 — DevOps & Execution Layer.
 7. Memory & Knowledge Layer
 8. Agent SDK
 9. Certification
+10. Governance Gates
 
 ## Execution principle
 
 No real action is considered completed unless it produces evidence, a log entry, auditability and a verifiable result.
+
+## Runtime certification and governance
+
+NEOS Fase 3 Block 8 defines Runtime Certification & Governance Gates v0.1.0 in
+`README_RUNTIME_CERTIFICATION_GOVERNANCE_GATES.md` and
+`docs/execution-layer/runtime-certification-governance-gates-v0.1.0.md`.
+
+Certification and governance gates block closure, promotion, release candidate
+approval and merge when evidence, audit, rollback, compatibility, critical
+decision review or explicit human authorization is missing.

@@ -70,3 +70,10 @@ Block 7 baseline version:
 | Close PR | Close unmerged PR without merge. |
 
 Rollback must link evidence and audit when the version had governance impact.
+
+## Block 8 certification requirement
+
+Version changes must pass SDK Contract Compliance, Integration Contract
+Compliance when integration-facing, Evidence Sufficiency, Audit Sufficiency and
+Rollback Readiness Certification. Breaking changes require Critical Decision
+Gates and explicit human authorization before merge.

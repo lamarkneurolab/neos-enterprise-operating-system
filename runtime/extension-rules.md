@@ -94,3 +94,10 @@ If a contract version must be superseded:
 2. Restore previous compatible version reference.
 3. Record evidence and audit.
 4. Record incident if the change created a runtime risk.
+
+## Block 8 certification requirement
+
+Extension rule changes must pass `runtime/governance-gate-matrix.md` and
+`runtime/pre-merge-governance-review.md`. Any extension that expands capability,
+changes external boundaries, weakens rollback, or changes compatibility is a
+critical decision and must be recorded before merge.
