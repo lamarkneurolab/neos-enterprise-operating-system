@@ -71,3 +71,9 @@ Audit Sufficiency.
 - [ ] Evidence linked.
 - [ ] Audit linked when required.
 - [ ] Completion criteria defined.
+
+## Relationship with rollback playbooks
+
+Rollback validation must confirm that future orchestration rollback playbooks
+define triggers, evidence, audit, completion criteria and human escalation
+conditions. Missing rollback playbook coverage blocks orchestration readiness.

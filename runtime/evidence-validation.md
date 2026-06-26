@@ -70,3 +70,9 @@ Pre-merge Governance Review.
 - [ ] Audit linked when required.
 - [ ] PR/change linked.
 - [ ] Staleness checked.
+
+## Relationship with evidence collection playbooks
+
+Evidence validation must confirm that future orchestration evidence is
+specific, current, scope-matched and linked to audit when governance-relevant.
+Missing or insufficient evidence blocks readiness, approval and closure.

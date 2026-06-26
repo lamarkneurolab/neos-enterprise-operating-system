@@ -229,6 +229,35 @@ The Execution Engine must preserve links between:
 The harness is documentary in v0.1.0. It must not introduce test runners,
 dependencies, CI automation, services, databases or external integrations.
 
+## Runtime Orchestration Readiness and Execution Playbooks
+
+Runtime Orchestration Readiness and Execution Playbooks define the documentary
+surface used to decide whether future runtime work may be reviewed for
+controlled orchestration.
+
+The Execution Engine must preserve links between:
+
+- `runtime/orchestration-readiness.md`
+- `runtime/execution-playbooks.md`
+- `runtime/pre-orchestration-checklist.md`
+- `runtime/controlled-execution-sequences.md`
+- `runtime/operational-runbooks.md`
+- `runtime/rollback-playbooks.md`
+- `runtime/evidence-collection-playbooks.md`
+- `runtime/audit-playbooks.md`
+- `runtime/incident-response-playbooks.md`
+- `runtime/validation-before-execution-rules.md`
+- `runtime/human-authorization-before-orchestration.md`
+- `runtime/release-to-orchestration-criteria.md`
+- `logs/ORCHESTRATION_READINESS_LOG.md`
+- `logs/EXECUTION_PLAYBOOK_LOG.md`
+- `logs/INCIDENT_RESPONSE_PLAYBOOK_LOG.md`
+
+Readiness does not authorize execution. Playbooks do not authorize execution.
+Orchestration eligibility does not mean orchestration approval. Future
+orchestration remains blocked unless validation, evidence, audit, rollback
+readiness and required human authorization are complete for the specific scope.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -255,6 +284,9 @@ Before an execution is considered closed, review:
 20. Is release candidate review complete when closing a block?
 21. Are required validation scenarios and test cases documented?
 22. Are regression and release readiness validation complete when applicable?
+23. Is orchestration readiness separated from execution authorization?
+24. Are playbook, rollback, evidence, audit and incident response references documented?
+25. Is human authorization specific to the branch, PR, head SHA and action when applicable?
 
 ## Evidence and audit
 
@@ -277,6 +309,11 @@ Test evidence belongs in `logs/TEST_EVIDENCE_LOG.md`.
 Regression reviews belong in `logs/REGRESSION_REVIEW_LOG.md`.
 Release readiness validation belongs in
 `logs/RELEASE_READINESS_VALIDATION_LOG.md`.
+Orchestration readiness reviews belong in
+`logs/ORCHESTRATION_READINESS_LOG.md`.
+Execution playbook reviews belong in `logs/EXECUTION_PLAYBOOK_LOG.md`.
+Incident response playbook reviews belong in
+`logs/INCIDENT_RESPONSE_PLAYBOOK_LOG.md`.
 
 ## Rollback
 

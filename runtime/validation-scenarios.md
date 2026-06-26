@@ -83,3 +83,9 @@ Readiness and Human Authorization Requirement.
 - [ ] Audit declared.
 - [ ] Rollback declared.
 - [ ] Gates linked.
+
+## Relationship with orchestration readiness
+
+Validation scenarios must be mapped before a future capability can be reviewed
+for orchestration readiness. A passed validation scenario supports readiness
+review only; it does not approve execution or orchestration.
