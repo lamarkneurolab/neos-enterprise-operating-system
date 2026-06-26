@@ -38,3 +38,9 @@ risk level, rollback plan or incident plan changes.
 
 Additional rollback review is required when risk increases or rollback
 coverage is incomplete.
+
+## Block 13 risk continuity
+
+Risk acceptance must remain current during Block 13 activation preconditions
+verification. Changed or stale risk places the activation session on hold or
+abort.

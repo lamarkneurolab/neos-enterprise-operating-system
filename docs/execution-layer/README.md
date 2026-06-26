@@ -3,8 +3,8 @@
 Execution engine, runtime flow, authorization, task queue, event bus,
 verification, observability, memory, SDK contracts, integration contracts,
 certification, governance gates, testing, validation, orchestration readiness
-execution playbooks, dry-run, simulation, controlled activation and execution
-authorization.
+execution playbooks, dry-run, simulation, controlled activation, execution
+authorization and controlled execution activation protocol.
 
 ## Fase 3 blocks
 
@@ -20,3 +20,4 @@ authorization.
 | Runtime Orchestration Readiness & Execution Playbooks v0.1.0 | `runtime-orchestration-readiness-execution-playbooks-v0.1.0.md` |
 | Runtime Orchestration Dry-Run & Simulation Layer v0.1.0 | `runtime-orchestration-dry-run-simulation-layer-v0.1.0.md` |
 | Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 | `runtime-controlled-activation-gate-execution-authorization-layer-v0.1.0.md` |
+| Runtime Controlled Execution Activation Protocol v0.1.0 | `runtime-controlled-execution-activation-protocol-v0.1.0.md` |

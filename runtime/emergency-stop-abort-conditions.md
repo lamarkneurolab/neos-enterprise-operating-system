@@ -34,3 +34,9 @@ Abort and emergency stop records belong in
 ## Human escalation
 
 High, critical and scope-invalidating conditions require human escalation.
+
+## Block 13 abort continuity
+
+Block 13 uses `runtime/execution-abort-conditions.md` to invalidate an
+activation session before execution when authorization, scope, SHA, evidence,
+audit, rollback readiness or risk posture changes.

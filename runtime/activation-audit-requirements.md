@@ -35,3 +35,8 @@ Any change after authorization must be recorded and evaluated for invalidation.
 ## Core log relationship
 
 Activation audit must link `logs/AUDIT_TRAIL.md` and `logs/DECISION_LOG.md`.
+
+## Block 13 audit handoff
+
+Block 13 requires `runtime/audit-record-before-activation.md` before final
+go/no-go. A Block 12 audit record does not replace the pre-activation audit.

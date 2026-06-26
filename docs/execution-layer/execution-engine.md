@@ -319,6 +319,41 @@ execution authorization layer, activation evidence package and explicit human
 authorization for the exact scope, PR, branch, head SHA, commit and action.
 The gate does not execute and authorization does not execute by itself.
 
+## Runtime Controlled Execution Activation Protocol
+
+Runtime Controlled Execution Activation Protocol defines the documentary layer
+between a Block 12 authorization decision and any future controlled runtime
+execution.
+
+The Execution Engine must preserve links between:
+
+- `runtime/controlled-execution-activation-protocol.md`
+- `runtime/activation-session-model.md`
+- `runtime/execution-window-definition.md`
+- `runtime/go-no-go-decision-protocol.md`
+- `runtime/activation-preconditions-verification.md`
+- `runtime/runtime-activation-scope-lock.md`
+- `runtime/human-final-approval-check.md`
+- `runtime/execution-start-conditions.md`
+- `runtime/execution-hold-conditions.md`
+- `runtime/execution-abort-conditions.md`
+- `runtime/evidence-capture-before-activation.md`
+- `runtime/audit-record-before-activation.md`
+- `runtime/rollback-readiness-before-activation.md`
+- `runtime/post-activation-monitoring-preconditions.md`
+- `runtime/activation-handoff-rules.md`
+- `logs/ACTIVATION_SESSION_LOG.md`
+- `logs/GO_NO_GO_DECISION_LOG.md`
+- `logs/EXECUTION_WINDOW_LOG.md`
+- `logs/ACTIVATION_SCOPE_LOCK_LOG.md`
+- `logs/PRE_ACTIVATION_EVIDENCE_LOG.md`
+
+Authorization approved does not execute. Activation protocol does not execute.
+Before any future execution, there must be an activation session, execution
+window, scope lock, pre-activation evidence, audit record, rollback readiness,
+post-activation monitoring preconditions and explicit human go/no-go for the
+exact PR, branch, head SHA, commit, scope, action and runtime window.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -354,6 +389,9 @@ Before an execution is considered closed, review:
 29. Is the controlled activation gate complete before any future execution request?
 30. Is the activation evidence package linked to audit, decision and risk records?
 31. Is execution authorization scoped to the exact PR, branch, head SHA, commit and action?
+32. Is the activation session documented before any future execution window?
+33. Is the runtime activation scope locked to the exact PR, branch, head SHA, commit, action and window?
+34. Is final human go/no-go recorded before any future controlled execution?
 
 ## Evidence and audit
 
@@ -392,6 +430,11 @@ Risk acceptance belongs in `logs/RISK_ACCEPTANCE_LOG.md`.
 Activation decisions belong in `logs/ACTIVATION_DECISION_LOG.md`.
 Emergency stop and abort reviews belong in
 `logs/EMERGENCY_STOP_ABORT_LOG.md`.
+Activation sessions belong in `logs/ACTIVATION_SESSION_LOG.md`.
+Go/no-go decisions belong in `logs/GO_NO_GO_DECISION_LOG.md`.
+Execution windows belong in `logs/EXECUTION_WINDOW_LOG.md`.
+Activation scope locks belong in `logs/ACTIVATION_SCOPE_LOCK_LOG.md`.
+Pre-activation evidence belongs in `logs/PRE_ACTIVATION_EVIDENCE_LOG.md`.
 
 ## Rollback
 

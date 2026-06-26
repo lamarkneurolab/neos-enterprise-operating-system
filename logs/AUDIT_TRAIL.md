@@ -182,3 +182,22 @@ authorization, decisions, evidence, incidents and rollback.
 | `result` | Documentation baseline created and linked. |
 | `risk_level` | `medium` |
 | `notes` | No business agents, operations agents, databases, services, runners, CI, productive automations, execution authorization, productive orchestration, destructive changes, permission changes, secret administration, dependency installation, external service activation, file deletion or automatic merge. |
+
+## 2026-06-26 — Fase 3 Block 13
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-F3-013` |
+| `timestamp` | `2026-06-26` |
+| `runtime_component` | `runtime-controlled-execution-activation-protocol` |
+| `task_id` | `TASK-NEOS-F3-013` |
+| `event_id` | `EVT-NEOS-F3-013` |
+| `action` | Establish Runtime Controlled Execution Activation Protocol v0.1.0 documentary layer. |
+| `authorization_ref` | User authorization to implement Block 13; no merge, execution or activation authorization granted. |
+| `decision_ref` | Decision Log entry for Block 13. |
+| `evidence_ref` | `EVD-NEOS-F3-014`; `PRE-ACT-EVD-NEOS-F3-013`; `TEST-EVD-NEOS-F3-013` |
+| `incident_ref` | `INC-NEOS-F3-013` |
+| `rollback_ref` | Revert Block 13 commit or close PR without merge. |
+| `result` | Documentation baseline created and linked. |
+| `risk_level` | `medium` |
+| `notes` | No business agents, operations agents, databases, services, runners, CI, productive automations, runtime activation, productive orchestration, destructive changes, permission changes, secret administration, dependency installation, external service activation, file deletion or automatic merge. |

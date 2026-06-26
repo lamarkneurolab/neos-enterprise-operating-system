@@ -58,3 +58,11 @@ plan, incident plan and decision record.
 
 The gate cannot automatically approve execution. It can only route the request
 to explicit human authorization review.
+
+## Block 13 transition
+
+When the gate emits an approved future-execution posture, the next required
+layer is `runtime/controlled-execution-activation-protocol.md`. Gate approval
+does not execute and does not bypass activation session, execution window,
+scope lock, pre-activation evidence, audit, rollback readiness or human
+go/no-go.

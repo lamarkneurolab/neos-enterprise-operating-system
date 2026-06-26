@@ -51,6 +51,7 @@ Block 11 Dry-Run / Simulation Result
   -> Execution Authorization Layer
   -> Post-Authorization Control Rules
   -> Emergency Stop / Abort Conditions
+  -> Block 13 Controlled Execution Activation Protocol
 ```
 
 ## Controlled Activation Gate
@@ -125,6 +126,14 @@ conditions govern future execution and require immediate human escalation.
 After authorization, no unapproved scope, PR, branch, head SHA, commit, action,
 permission, secret, dependency, integration or agent change may proceed without
 new approval.
+
+## Relationship to Block 13
+
+Block 13 is the required documentary protocol after a Block 12 authorization
+decision and before any future controlled execution. Block 12 authorization does
+not execute. Block 13 activation protocol also does not execute. Future
+execution remains blocked until explicit human go/no-go exists for the exact
+PR, branch, head SHA, commit, scope, action and runtime window.
 
 ## Risks and controls
 

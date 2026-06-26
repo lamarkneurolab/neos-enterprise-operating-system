@@ -40,3 +40,9 @@ Define exact scope requirements for controlled activation requests.
 ## Rule
 
 Scope ambiguity blocks activation review.
+
+## Block 13 scope lock
+
+The approved scope becomes the input to
+`runtime/runtime-activation-scope-lock.md`. Any expansion requires renewed
+authorization and cannot proceed under the same activation session.
