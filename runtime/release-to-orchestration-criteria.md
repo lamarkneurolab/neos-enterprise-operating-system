@@ -34,3 +34,10 @@ release readiness to orchestration readiness review.
 Release readiness may feed orchestration readiness review, but it does not
 approve orchestration. Approval requires the specific authorization and control
 records required by the future scope.
+
+## Relationship with release-to-activation
+
+Release-to-orchestration may feed dry-run simulation, but it does not approve
+activation. Future activation must satisfy controlled activation
+preconditions, including dry-run simulation result review and explicit human
+authorization for the exact scope.

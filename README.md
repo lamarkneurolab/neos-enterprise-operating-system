@@ -28,6 +28,7 @@ FASE 3 — DevOps & Execution Layer.
 10. Governance Gates
 11. Testing & Validation Harness
 12. Orchestration Readiness & Execution Playbooks
+13. Orchestration Dry-Run & Simulation Layer
 
 ## Execution principle
 
@@ -65,3 +66,12 @@ Readiness does not authorize execution. Playbooks do not authorize execution.
 Orchestration eligibility does not mean orchestration approval. Future
 orchestration requires validation, evidence, audit, rollback readiness and
 specific human authorization when applicable.
+
+## Runtime orchestration dry-run and simulation
+
+NEOS Fase 3 Block 11 defines Runtime Orchestration Dry-Run & Simulation Layer
+v0.1.0 in `README_RUNTIME_ORCHESTRATION_DRY_RUN_SIMULATION_LAYER.md` and
+`docs/execution-layer/runtime-orchestration-dry-run-simulation-layer-v0.1.0.md`.
+
+Dry-run does not execute. Simulation does not authorize. No-op does not modify
+real state. Simulation passed does not mean activation approved.

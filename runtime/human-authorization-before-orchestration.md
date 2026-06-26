@@ -54,3 +54,10 @@ limit documented in that authorization.
 Every authorization for merge or critical execution applies only to the
 specific case. Authorization from PR #7 does not apply to any future PR or
 execution.
+
+## Relationship with activation authorization
+
+Future activation requires authorization under
+`runtime/human-authorization-before-activation.md`. Authorization from PR #8
+applied only to PR #8 and does not authorize Block 11 merge or any future
+activation.

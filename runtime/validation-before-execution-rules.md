@@ -45,3 +45,10 @@ If there is no validation, evidence and audit, there is no readiness.
 Execution is blocked when any applicable validation domain is missing, failed,
 stale, ambiguous or contradicted by evidence, audit, governance or
 certification outcomes.
+
+## Relationship with validation before activation
+
+Before any future activation, validation must include dry-run simulation,
+preflight checks, no-op review, simulated evidence, simulated audit, simulated
+rollback and incident simulation. Simulation passed does not authorize
+activation.

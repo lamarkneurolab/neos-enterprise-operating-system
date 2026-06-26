@@ -40,3 +40,9 @@ Define the documentary sequence model for future controlled runtime execution.
 Controlled execution must not start from eligibility alone. It may only proceed
 after authorization and all applicable validations, evidence, audit and
 rollback readiness are resolved for the specific scope.
+
+## Relationship with dry-run simulation
+
+Controlled execution sequences must be simulated in no-op mode before future
+activation can be considered. A simulated sequence does not modify real state
+and does not authorize activation.

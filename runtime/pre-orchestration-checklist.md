@@ -30,3 +30,8 @@ enter orchestration readiness review.
 
 Any unchecked required item blocks progression beyond
 `readiness_review_required`.
+
+## Relationship with preflight checks
+
+This checklist feeds Block 11 preflight checks. Passing this checklist does not
+start execution or activation; it only supports dry-run simulation review.

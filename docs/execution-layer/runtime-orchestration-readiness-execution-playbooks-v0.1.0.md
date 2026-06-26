@@ -137,3 +137,13 @@ Status: documentary baseline for review.
 Canonical source: GitHub.
 
 Official source format: Markdown.
+
+## Relationship with Block 11 dry-run and simulation
+
+Block 10 readiness and playbooks may feed Block 11 dry-run simulation, but they
+do not authorize activation. Before any future activation request, the proposed
+orchestration must pass through preflight checks, no-op simulation, simulated
+evidence review, simulated audit review, simulated rollback review and incident
+simulation.
+
+Simulation passed does not mean activation approved.

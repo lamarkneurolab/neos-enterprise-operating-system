@@ -58,3 +58,10 @@ Rollback decisions with governance or runtime impact must link to
 Rollback playbooks must remain consistent with `runtime/rollback-validation.md`.
 Rollback readiness must fail when a rollback path is missing, unreviewed or
 not aligned with the affected runtime scope.
+
+## Relationship with simulated rollback
+
+Rollback playbooks must be rehearsed through
+`runtime/simulated-rollback-flow.md` before any future activation request.
+Simulated rollback does not execute real rollback and does not approve
+activation.
