@@ -23,3 +23,12 @@ approval before they can proceed.
 
 Authorization granted for PR #5 applied only to PR #5. It does not authorize
 Block 8, future pull requests, future merges or future destructive actions.
+
+## Block 9 validation linkage
+
+Human authorization gates are validated by
+`runtime/authorization-flow-validation.md` and
+`runtime/governance-gate-validation.md`.
+
+Validation must confirm that PR #6 authorization applied only to PR #6 and does
+not authorize Block 9 or future merges.

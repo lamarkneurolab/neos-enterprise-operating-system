@@ -240,3 +240,20 @@ Status: documentary baseline for review.
 Canonical source: GitHub.
 
 Official source format: Markdown.
+
+## Block 9 validation linkage
+
+Block 9 adds Runtime Testing & Validation Harness v0.1.0 as a documentary
+validation layer over Block 8 certification and governance gates.
+
+Certification and governance outcomes may be validated through:
+
+- `runtime/certification-gate-validation.md`
+- `runtime/governance-gate-validation.md`
+- `runtime/evidence-validation.md`
+- `runtime/audit-validation.md`
+- `runtime/regression-validation.md`
+- `runtime/release-readiness-validation.md`
+
+Block 9 does not change Block 8 gate authority. It validates whether gates,
+evidence, audit, rollback and release readiness are sufficiently documented.

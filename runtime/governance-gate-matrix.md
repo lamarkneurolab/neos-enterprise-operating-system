@@ -35,3 +35,10 @@ The governed outcome is blocked when any required item is missing:
 
 Blocked outcomes must be recorded in `logs/GOVERNANCE_GATE_LOG.md` and, when
 they affect closure or merge, in `logs/INCIDENT_LOG.md`.
+
+## Block 9 validation linkage
+
+Governance gate outcomes are validated by
+`runtime/governance-gate-validation.md`. Change types that affect release
+readiness should also link `runtime/regression-validation.md` and
+`runtime/release-readiness-validation.md`.

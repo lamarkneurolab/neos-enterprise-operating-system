@@ -1,0 +1,15 @@
+# Validation Log
+
+This log records NEOS runtime validation results.
+
+## Validation entry template
+
+| ID | Date | Component | Scenario/Test Case | Status | Evidence Reference | Audit Reference | Reviewer | Decision | Follow-up | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `VAL-NEOS-YYYY-NNN` | ISO 8601 date | Runtime component | Scenario or test case title | `passed`, `failed`, `blocked`, `not_run` or `not_applicable` | Evidence or test evidence reference | Audit reference | Reviewer | Decision summary | Follow-up action | Notes |
+
+## 2026-06-26 — Fase 3 Block 9
+
+| ID | Date | Component | Scenario/Test Case | Status | Evidence Reference | Audit Reference | Reviewer | Decision | Follow-up | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| VAL-NEOS-F3-009 | 2026-06-26 | runtime-testing-validation-harness | Validate Block 9 documentary scope and required files | passed | TEST-EVD-NEOS-F3-009 | AUD-NEOS-F3-009 | Codex / NEOS Runtime Governance | Block 9 validation layer documented for PR review | Run `git diff --check HEAD~1 HEAD` after commit; keep PR unmerged | Validation is documentary and does not execute runtime tests. |

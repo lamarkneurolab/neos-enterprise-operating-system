@@ -190,6 +190,45 @@ certification gate is blocked. Missing evidence, missing audit, missing human
 authorization, unresolved critical decision, missing rollback readiness or open
 high/critical incident blocks closure and merge.
 
+## Runtime Testing and Validation Harness
+
+Runtime Testing and Validation Harness defines the documentary validation
+surface used to test runtime flows, contracts, gates, rollback, evidence, audit,
+regression and release readiness.
+
+The Execution Engine must preserve links between:
+
+- `runtime/testing-harness.md`
+- `runtime/validation-scenarios.md`
+- `runtime/test-case-registry.md`
+- `runtime/runtime-contract-validation.md`
+- `runtime/authorization-flow-validation.md`
+- `runtime/execution-flow-validation.md`
+- `runtime/task-queue-validation.md`
+- `runtime/event-bus-validation.md`
+- `runtime/state-manager-validation.md`
+- `runtime/observability-validation.md`
+- `runtime/audit-trail-validation.md`
+- `runtime/memory-context-validation.md`
+- `runtime/sdk-contract-validation.md`
+- `runtime/integration-contract-validation.md`
+- `runtime/certification-gate-validation.md`
+- `runtime/governance-gate-validation.md`
+- `runtime/rollback-validation.md`
+- `runtime/failure-scenario-validation.md`
+- `runtime/evidence-validation.md`
+- `runtime/audit-validation.md`
+- `runtime/regression-validation.md`
+- `runtime/release-readiness-validation.md`
+- `logs/TEST_CASE_REGISTRY_LOG.md`
+- `logs/VALIDATION_LOG.md`
+- `logs/TEST_EVIDENCE_LOG.md`
+- `logs/REGRESSION_REVIEW_LOG.md`
+- `logs/RELEASE_READINESS_VALIDATION_LOG.md`
+
+The harness is documentary in v0.1.0. It must not introduce test runners,
+dependencies, CI automation, services, databases or external integrations.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -214,6 +253,8 @@ Before an execution is considered closed, review:
 18. Are evidence and audit sufficient?
 19. Is human authorization required before merge?
 20. Is release candidate review complete when closing a block?
+21. Are required validation scenarios and test cases documented?
+22. Are regression and release readiness validation complete when applicable?
 
 ## Evidence and audit
 
@@ -230,6 +271,12 @@ Execution snapshots belong in `logs/CONTEXT_SNAPSHOT_LOG.md`.
 Certification outcomes belong in `logs/CERTIFICATION_LOG.md`.
 Governance gate outcomes belong in `logs/GOVERNANCE_GATE_LOG.md`.
 Release candidate posture belongs in `logs/RELEASE_CANDIDATE_REVIEW_LOG.md`.
+Test case registry entries belong in `logs/TEST_CASE_REGISTRY_LOG.md`.
+Validation outcomes belong in `logs/VALIDATION_LOG.md`.
+Test evidence belongs in `logs/TEST_EVIDENCE_LOG.md`.
+Regression reviews belong in `logs/REGRESSION_REVIEW_LOG.md`.
+Release readiness validation belongs in
+`logs/RELEASE_READINESS_VALIDATION_LOG.md`.
 
 ## Rollback
 
@@ -261,6 +308,8 @@ Every execution plan must declare one of:
 | Failed certification gate | Block closure, record certification result and remediate or roll back. |
 | Missing human authorization | Stop merge or critical action until Tiziano authorizes the specific action. |
 | Incomplete release candidate review | Keep PR open and block closure. |
+| Failed validation scenario | Block readiness, record validation result and remediate or roll back. |
+| Regression failure | Block release readiness and merge until compatibility is restored or explicitly decided. |
 
 ## Execution state machine
 

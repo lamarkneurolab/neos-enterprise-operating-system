@@ -33,3 +33,16 @@ can be considered ready.
 Record the outcome in `logs/CERTIFICATION_LOG.md`. Blocked outcomes that affect
 closure or merge must also be reflected in `logs/GOVERNANCE_GATE_LOG.md` and
 `logs/INCIDENT_LOG.md` when incident criteria are met.
+
+## Block 9 validation linkage
+
+Execution readiness can be validated through:
+
+- `runtime/execution-flow-validation.md`
+- `runtime/task-queue-validation.md`
+- `runtime/event-bus-validation.md`
+- `runtime/state-manager-validation.md`
+- `runtime/failure-scenario-validation.md`
+
+Validation should link test evidence, audit, rollback posture and regression
+review when execution behavior changes.
