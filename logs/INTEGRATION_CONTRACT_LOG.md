@@ -16,3 +16,4 @@ evidence, audit and rollback references.
 | 2026-06-26 | INT-AUDIT | `0.1.0` | Establish Integration Audit Requirement. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
 | 2026-06-26 | INT-FAILURE | `0.1.0` | Establish Integration Failure Rule. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
 | 2026-06-26 | INT-ROLLBACK | `0.1.0` | Establish Integration Rollback Rule. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
+| 2026-06-26 | INT-GOVERNANCE-GATES | `0.1.0` | Add Block 8 integration readiness, governance gate and human authorization requirements without activating real integrations. | `EVD-NEOS-F3-009` | `AUD-NEOS-F3-008` | Revert Block 8 commit or close PR without merge. |

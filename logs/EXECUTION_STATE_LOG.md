@@ -6,6 +6,7 @@
 | 2026-06-25 | STATE-NEOS-F3-005 | TASK-NEOS-F3-005 | EVT-NEOS-F3-005 | authorized     | completed  | Block 5 observability, audit trail and incident record baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-006 | Revert Block 5 commit or close PR without merge |
 | 2026-06-26 | STATE-NEOS-F3-006 | TASK-NEOS-F3-006 | EVT-NEOS-F3-006 | authorized     | completed  | Block 6 runtime memory, context persistence, snapshots, resume and recovery baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-007 | Revert Block 6 commit or close PR without merge |
 | 2026-06-26 | STATE-NEOS-F3-007 | TASK-NEOS-F3-007 | EVT-NEOS-F3-007 | authorized     | completed  | Block 7 runtime SDK, integration contracts, internal interfaces, compatibility, extension, boundary and versioning baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-008 | Revert Block 7 commit or close PR without merge |
+| 2026-06-26 | STATE-NEOS-F3-008 | TASK-NEOS-F3-008 | EVT-NEOS-F3-008 | authorized     | completed  | Block 8 runtime certification, governance gates, readiness certifications, evidence sufficiency, audit sufficiency, human authorization gates, critical decision gates and release candidate review baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-009 | Revert Block 8 commit or close PR without merge |
 
 ## Block 5 runtime review links
 
@@ -24,3 +25,9 @@
 | Task ID | SDK Contracts | Integration Contracts | Interfaces | Versioning / Compatibility | Contract Logs |
 |---|---|---|---|---|---|
 | `TASK-NEOS-F3-007` | `runtime/sdk.md` | `runtime/integration-contracts.md`; `runtime/external-execution-boundaries.md` | `runtime/internal-interfaces.md`; `runtime/extension-rules.md` | `runtime/sdk-versioning.md`; `runtime/compatibility-matrix.md` | `logs/SDK_CONTRACT_LOG.md`; `logs/INTEGRATION_CONTRACT_LOG.md` |
+
+## Block 8 certification and governance review links
+
+| Task ID | Certification Gates | Governance Gates | Readiness Certifications | Sufficiency Rules | Review Logs |
+|---|---|---|---|---|---|
+| `TASK-NEOS-F3-008` | `runtime/certification-gates.md` | `runtime/governance-gate-matrix.md`; `runtime/pre-merge-governance-review.md`; `runtime/human-authorization-gates.md`; `runtime/critical-decision-gates.md` | `runtime/execution-readiness-certification.md`; `runtime/integration-readiness-certification.md`; `runtime/rollback-readiness-certification.md`; `runtime/release-candidate-review.md` | `runtime/evidence-sufficiency-rules.md`; `runtime/audit-sufficiency-rules.md` | `logs/CERTIFICATION_LOG.md`; `logs/GOVERNANCE_GATE_LOG.md`; `logs/RELEASE_CANDIDATE_REVIEW_LOG.md` |

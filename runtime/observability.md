@@ -92,3 +92,10 @@ Runtime review may inspect observability by:
 - No dashboard is implemented.
 - No autonomous remediation is defined.
 - No worker, queue transport or database is introduced.
+
+## Block 8 certification requirement
+
+Observability changes that affect runtime governance must pass Evidence
+Sufficiency, Audit Sufficiency and the Governance Gate Matrix. Missing evidence
+for medium, high or critical observability events blocks closure. Missing audit
+for governance-relevant observability events blocks merge.

@@ -40,3 +40,9 @@ conditions and manual intervention requirements.
 | Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | INC-NEOS-F3-007 | info | runtime-sdk-integration-contracts | TASK-NEOS-F3-007 | EVT-NEOS-F3-007 | Block 7 SDK and integration contract logs initialized; no runtime incident recorded during documentation baseline. `runtime/authorization.md` was not present, so Block 7 links to existing authorization documentation instead. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-008 | AUD-NEOS-F3-007 | closed |
+
+## Initial Block 8 status
+
+| Date | Incident ID | Severity | Affected Component | Task ID | Event ID | Description | Detected By | Risk Level | Containment Action | Rollback Required | Rollback Ref | Evidence Ref | Audit Ref | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-26 | INC-NEOS-F3-008 | info | runtime-certification-governance-gates | TASK-NEOS-F3-008 | EVT-NEOS-F3-008 | Block 8 certification, governance and release candidate logs initialized; no runtime incident recorded during documentation baseline. Merge remains blocked until explicit Tiziano authorization for the specific PR. | Codex / NEOS Runtime Governance | low | not_required | not_required | not_required | EVD-NEOS-F3-009 | AUD-NEOS-F3-008 | closed |

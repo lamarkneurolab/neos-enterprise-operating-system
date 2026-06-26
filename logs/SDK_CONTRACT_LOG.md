@@ -16,3 +16,4 @@ rollback references.
 | 2026-06-26 | SDK-EVIDENCE | `0.1.0` | Establish SDK Evidence contract baseline. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
 | 2026-06-26 | SDK-AUDIT | `0.1.0` | Establish SDK Audit contract baseline. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
 | 2026-06-26 | SDK-VERSION | `0.1.0` | Establish SDK Version contract baseline. | `EVD-NEOS-F3-008` | `AUD-NEOS-F3-007` | Revert Block 7 commit or close PR without merge. |
+| 2026-06-26 | SDK-GOVERNANCE-GATES | `0.1.0` | Add Block 8 certification and governance gate requirements over SDK contract changes without changing SDK execution semantics. | `EVD-NEOS-F3-009` | `AUD-NEOS-F3-008` | Revert Block 8 commit or close PR without merge. |

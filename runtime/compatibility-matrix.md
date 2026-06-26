@@ -20,6 +20,8 @@ Contracts and NEOS Fase 3 Blocks 1-6.
 | Block 6 - Context Persistence | Context references with evidence and audit. | Compatible | Persist references, not secrets or unsupported claims. |
 | Block 7 - SDK Contracts | Runtime SDK baseline. | Baseline | Use v0.1.0 contract template. |
 | Block 7 - Integration Contracts | Integration entry, exit, failure and rollback rules. | Baseline | External execution blocked by default. |
+| Block 8 - Certification Gates | Runtime certification baseline. | Additive | Required gates must pass before closure, promotion, release candidate review or merge. |
+| Block 8 - Governance Gates | Cross-cutting governance matrix, pre-merge review and human authorization gates. | Additive | Missing evidence, audit, rollback, compatibility or human authorization blocks closure and merge. |
 
 ## Contract compatibility
 
@@ -36,6 +38,9 @@ Contracts and NEOS Fase 3 Blocks 1-6.
 | SDK Version Contract | `0.1.0` | Compatibility Matrix, SDK Contract Log | `compatible` | `EVD-NEOS-F3-008` |
 | Integration Contract | `0.1.0` | Authorization, Task Queue, Event Bus, State Manager, Observability | `compatible` | `EVD-NEOS-F3-008` |
 | External Execution Boundaries | `0.1.0` | Authorization, Registry System, Incident Records, Rollback | `compatible` | `EVD-NEOS-F3-008` |
+| Certification Gates | `0.1.0` | Authorization, Execution Flow, Task Queue, Event Bus, State Manager, Observability, Audit Trail, Runtime Memory, SDK Contracts, Integration Contracts | `compatible` | `EVD-NEOS-F3-009` |
+| Governance Gate Matrix | `0.1.0` | Blocks 1-7, Evidence Log, Audit Trail, Decision Log, Incident Log, Release Candidate Review | `compatible` | `EVD-NEOS-F3-009` |
+| Human Authorization Gates | `0.1.0` | Authorization Flow, Pre-merge Governance Review, Release Candidate Review | `compatible` | `EVD-NEOS-F3-009` |
 
 ## Risk matrix
 
@@ -49,6 +54,9 @@ Contracts and NEOS Fase 3 Blocks 1-6.
 | R-INT-002 | Prohibited data crosses interface. | Low | Critical | Internal Interface data rules. | Revoke context and record incident. |
 | R-MEM-001 | Stale context reused. | Medium | High | Runtime Memory review. | Mark stale or revoked. |
 | R-VER-001 | Breaking change merged as minor. | Low | High | Versioning review. | Revert commit or supersede version. |
+| R-GOV-001 | Required certification gate is bypassed. | Medium | High | Block 8 Certification Gates. | Block closure, remediate or close PR without merge. |
+| R-GOV-002 | Merge proceeds without PR-specific Tiziano authorization. | Low | Critical | Human Authorization Gates and Pre-merge Governance Review. | Stop merge; revert if merged without authorization. |
+| R-GOV-003 | Release candidate is declared with incomplete evidence or audit. | Medium | High | Release Candidate Review and sufficiency rules. | Keep PR open until gaps are remediated. |
 
 ## Review checklist
 
@@ -64,6 +72,8 @@ Contracts and NEOS Fase 3 Blocks 1-6.
 - [ ] Internal interfaces include required fields.
 - [ ] Evidence, audit, state and incident logs are updated when applicable.
 - [ ] Rollback path is documented.
+- [ ] Required Block 8 certification and governance gates pass.
+- [ ] Human authorization is identified and merge remains blocked until PR-specific Tiziano approval.
 
 ## Certification checklist
 
@@ -74,3 +84,4 @@ Contracts and NEOS Fase 3 Blocks 1-6.
 - [ ] Branch is not `main`.
 - [ ] PR is opened for review.
 - [ ] PR is not merged automatically.
+- [ ] Block 8 release candidate review is complete when a block is declared candidate-ready.

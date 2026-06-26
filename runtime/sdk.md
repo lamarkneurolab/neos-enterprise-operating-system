@@ -43,3 +43,27 @@ Every SDK contract must include:
 - No connectors are executed.
 - No business agents are created.
 - No secrets, credentials or permissions are stored.
+
+## Block 8 certification requirement
+
+SDK contract changes must pass the following Block 8 gates before closure or
+merge:
+
+- SDK Contract Compliance.
+- Evidence Sufficiency.
+- Audit Sufficiency.
+- Rollback Readiness.
+- Critical Decision Escalation when compatibility, authorization or external
+  boundary semantics change.
+- Human Authorization Requirement before merge.
+
+Required logs:
+
+- `logs/SDK_CONTRACT_LOG.md`
+- `logs/CERTIFICATION_LOG.md`
+- `logs/GOVERNANCE_GATE_LOG.md`
+- `logs/EVIDENCE_LOG.md`
+- `logs/AUDIT_TRAIL.md`
+
+If evidence, audit, authorization or rollback readiness is missing, the SDK
+contract change remains blocked.

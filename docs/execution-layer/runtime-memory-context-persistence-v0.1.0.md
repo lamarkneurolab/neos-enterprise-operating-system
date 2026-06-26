@@ -358,3 +358,20 @@ Block 6 v0.1.0 is complete when:
 17. A non-empty commit is created if implementation is accepted.
 18. A Draft PR or PR is opened for human review if authorized.
 19. No automatic merge is performed.
+
+## Block 8 certification linkage
+
+Block 8 adds Memory Safety and readiness certification gates over runtime
+memory and context persistence.
+
+Memory, context, snapshot, resume or recovery changes must pass:
+
+- `runtime/certification-gates.md`
+- `runtime/execution-readiness-certification.md`
+- `runtime/evidence-sufficiency-rules.md`
+- `runtime/audit-sufficiency-rules.md`
+- `runtime/rollback-readiness-certification.md`
+
+Stale, revoked, unaudited, unsupported or prohibited context blocks resume,
+recovery, closure and merge until evidence, audit and rollback posture are
+sufficient.

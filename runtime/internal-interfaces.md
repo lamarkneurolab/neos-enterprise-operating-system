@@ -46,3 +46,10 @@ Before adding or changing an interface:
 5. Confirm risk and rollback handling.
 6. Update `runtime/compatibility-matrix.md`.
 7. Update SDK or integration logs when applicable.
+
+## Block 8 certification requirement
+
+Internal interface changes must pass the Governance Gate Matrix before closure
+or merge. Interface changes that affect allowed data, prohibited data, runtime
+boundaries, SDK contracts, integration contracts, rollback or compatibility
+must also pass Critical Decision Gates and Rollback Readiness Certification.

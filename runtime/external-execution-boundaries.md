@@ -67,3 +67,13 @@ Block 7 rollback is documentary:
 - Supersede or revoke the contract version.
 - Record evidence, audit and incident entries when the boundary failure affected
   runtime governance.
+
+## Block 8 certification requirement
+
+External boundary changes must pass Human Authorization Gates, Critical
+Decision Gates, Integration Readiness Certification, Evidence Sufficiency and
+Audit Sufficiency before merge or release candidate approval.
+
+Real external execution remains blocked by default. Any exact external read,
+write, connector activation, workflow trigger, notification, job or service
+side effect requires explicit Tiziano authorization for that exact action.

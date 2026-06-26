@@ -161,6 +161,35 @@ SDK and integration contracts do not authorize work, execute connectors, mutate
 state, manage secrets or change permissions by themselves. External execution
 is blocked by default unless separately authorized and evidenced.
 
+## Runtime Certification and Governance Gates
+
+Runtime Certification and Governance Gates define the required documentary
+checks before runtime work can be closed, promoted, integrated, rolled back,
+declared release-candidate-ready or merged.
+
+The Execution Engine must preserve links between:
+
+- `runtime/certification-gates.md`
+- `runtime/governance-gate-matrix.md`
+- `runtime/pre-merge-governance-review.md`
+- `runtime/runtime-compliance-checklist.md`
+- `runtime/execution-readiness-certification.md`
+- `runtime/integration-readiness-certification.md`
+- `runtime/rollback-readiness-certification.md`
+- `runtime/evidence-sufficiency-rules.md`
+- `runtime/audit-sufficiency-rules.md`
+- `runtime/human-authorization-gates.md`
+- `runtime/critical-decision-gates.md`
+- `runtime/release-candidate-review.md`
+- `logs/CERTIFICATION_LOG.md`
+- `logs/GOVERNANCE_GATE_LOG.md`
+- `logs/RELEASE_CANDIDATE_REVIEW_LOG.md`
+
+The Execution Engine must not mark governed work complete when a required
+certification gate is blocked. Missing evidence, missing audit, missing human
+authorization, unresolved critical decision, missing rollback readiness or open
+high/critical incident blocks closure and merge.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -180,6 +209,11 @@ Before an execution is considered closed, review:
 13. Are SDK and integration contract boundaries respected?
 14. Is compatibility with Blocks 1-6 preserved?
 15. Is external execution blocked unless explicitly authorized?
+16. Are required certification gates passed?
+17. Is the governance gate matrix outcome documented?
+18. Are evidence and audit sufficient?
+19. Is human authorization required before merge?
+20. Is release candidate review complete when closing a block?
 
 ## Evidence and audit
 
@@ -193,6 +227,9 @@ runtime significance beyond documentation.
 Runtime incidents belong in `logs/INCIDENT_LOG.md`.
 Runtime memory belongs in `logs/MEMORY_LOG.md`.
 Execution snapshots belong in `logs/CONTEXT_SNAPSHOT_LOG.md`.
+Certification outcomes belong in `logs/CERTIFICATION_LOG.md`.
+Governance gate outcomes belong in `logs/GOVERNANCE_GATE_LOG.md`.
+Release candidate posture belongs in `logs/RELEASE_CANDIDATE_REVIEW_LOG.md`.
 
 ## Rollback
 
@@ -221,6 +258,9 @@ Every execution plan must declare one of:
 | Invalid state transition | Block transition and record `invalid_state_transition` incident. |
 | Invalid memory reuse | Block resume and record memory review evidence. |
 | Missing snapshot evidence | Block recovery and record missing evidence. |
+| Failed certification gate | Block closure, record certification result and remediate or roll back. |
+| Missing human authorization | Stop merge or critical action until Tiziano authorizes the specific action. |
+| Incomplete release candidate review | Keep PR open and block closure. |
 
 ## Execution state machine
 
