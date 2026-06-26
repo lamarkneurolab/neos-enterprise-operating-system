@@ -354,6 +354,39 @@ window, scope lock, pre-activation evidence, audit record, rollback readiness,
 post-activation monitoring preconditions and explicit human go/no-go for the
 exact PR, branch, head SHA, commit, scope, action and runtime window.
 
+## Runtime Controlled Execution Monitoring and Live Safeguards
+
+Runtime Controlled Execution Monitoring and Live Safeguards define the
+documentary monitoring boundary required before any future controlled execution
+could be observed.
+
+The Execution Engine must preserve links between:
+
+- `docs/runtime/controlled-monitoring/README.md`
+- `docs/runtime/controlled-monitoring/controlled-execution-monitoring-model.md`
+- `docs/runtime/controlled-monitoring/live-safeguards-protocol.md`
+- `docs/runtime/controlled-monitoring/runtime-health-observation-rules.md`
+- `docs/runtime/controlled-monitoring/live-evidence-capture-rules.md`
+- `docs/runtime/controlled-monitoring/live-audit-linkage.md`
+- `docs/runtime/controlled-monitoring/execution-drift-detection.md`
+- `docs/runtime/controlled-monitoring/runtime-anomaly-handling.md`
+- `docs/runtime/controlled-monitoring/live-stop-conditions.md`
+- `docs/runtime/controlled-monitoring/emergency-pause-protocol.md`
+- `docs/runtime/controlled-monitoring/human-escalation-rules.md`
+- `docs/runtime/controlled-monitoring/monitoring-scope-boundaries.md`
+- `docs/runtime/controlled-monitoring/runtime-safety-signals.md`
+- `docs/runtime/controlled-monitoring/live-rollback-trigger-conditions.md`
+- `docs/runtime/controlled-monitoring/post-start-observation-checklist.md`
+- `docs/runtime/controlled-monitoring/controlled-monitoring-handoff-rules.md`
+- `docs/runtime/controlled-monitoring/monitoring-evidence-package.md`
+- `docs/runtime/controlled-monitoring/safeguard-failure-handling.md`
+- `docs/runtime/controlled-monitoring/block-14-acceptance-checklist.md`
+
+Monitoring safeguards do not execute. Live monitoring definition does not
+activate services. Controlled execution remains blocked until explicit human
+go/no-go exists for the exact PR, branch, head SHA, commit, scope, action,
+runtime window and monitoring boundary.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -392,6 +425,7 @@ Before an execution is considered closed, review:
 32. Is the activation session documented before any future execution window?
 33. Is the runtime activation scope locked to the exact PR, branch, head SHA, commit, action and window?
 34. Is final human go/no-go recorded before any future controlled execution?
+35. Are monitoring boundaries, live safeguards, evidence, audit, stop, pause, rollback and escalation rules documented before any future controlled monitoring?
 
 ## Evidence and audit
 

@@ -31,6 +31,7 @@ FASE 3 — DevOps & Execution Layer.
 13. Orchestration Dry-Run & Simulation Layer
 14. Controlled Activation Gate & Execution Authorization Layer
 15. Controlled Execution Activation Protocol
+16. Controlled Execution Monitoring & Live Safeguards
 
 ## Execution principle
 
@@ -100,3 +101,13 @@ v0.1.0 in
 Authorization approved does not execute. Activation protocol does not execute.
 Execution remains blocked until explicit human go/no-go exists for the exact PR,
 branch, head SHA, commit, scope, action and runtime window.
+
+## Runtime controlled execution monitoring and live safeguards
+
+NEOS Fase 3 Block 14 defines Runtime Controlled Execution Monitoring & Live
+Safeguards v0.1.0 in `docs/runtime/controlled-monitoring/README.md`.
+
+Monitoring safeguards do not execute. Live monitoring definition does not
+activate services. Controlled execution remains blocked until explicit human
+go/no-go exists for the exact PR, branch, head SHA, commit, scope, action,
+runtime window and monitoring boundary.
