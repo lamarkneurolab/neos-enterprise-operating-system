@@ -23,6 +23,8 @@ The layer ensures that runtime execution has durable references for:
 - Evidence linkage.
 - Decision linkage.
 - Rollback linkage.
+- Runtime memory and context snapshot linkage when execution context is
+  persisted or reused.
 
 ## Scope
 
@@ -271,6 +273,25 @@ Before an execution is considered closed, review:
 | Incident record | Event, evidence, audit and rollback references. |
 | State transition | Event, evidence, audit and incident references when applicable. |
 | Rollback hook | Evidence, audit and incident references when applicable. |
+| Memory record | Decision, evidence, audit, incident, state and snapshot references when applicable. |
+| Context snapshot | Task, event, state, decision, evidence, audit, incident and rollback references. |
+
+## Block 6 linkage
+
+Block 6 Runtime Memory & Context Persistence extends this observability and
+audit layer with:
+
+- `runtime/memory.md`
+- `runtime/context-persistence.md`
+- `runtime/execution-snapshots.md`
+- `runtime/context-resume.md`
+- `runtime/state-recovery.md`
+- `logs/MEMORY_LOG.md`
+- `logs/CONTEXT_SNAPSHOT_LOG.md`
+
+Observability and audit records remain the source of inspection and governance
+links. Memory and snapshots must not replace evidence, audit, incident or
+rollback records.
 
 ## Verification
 

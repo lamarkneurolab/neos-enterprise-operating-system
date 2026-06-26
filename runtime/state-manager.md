@@ -60,6 +60,8 @@ evidence, audit or rollback requirements.
 - Invalid transitions must be inspectable through Runtime Observability.
 - Invalid transitions must link an incident record when closure is blocked.
 - Rollback states require evidence before closure.
+- Resume and recovery decisions require valid memory and snapshot review before
+  state is treated as current.
 - `queued` tasks cannot enter `in_progress` directly.
 - `blocked` or rejected tasks cannot enter `in_progress`.
 - `completed`, `cancelled` and `rolled_back` are terminal for the original
@@ -117,12 +119,24 @@ State transitions should preserve Block 5 links when applicable:
 | Missing audit | `missing_audit_entry` incident. |
 | Rollback failure | `rollback_failure` incident. |
 | Manual remediation | `manual_intervention_required` incident. |
+| Context resume | Memory record, snapshot record, evidence and audit link. |
+| State recovery | Snapshot record, evidence, audit and incident review. |
 
 Observability and incident records do not change state by themselves. They
 preserve the review trail for state decisions already governed by this contract.
+
+## Memory and recovery linkage
+
+State recovery must not bypass State Manager rules. A prior state may be used
+only when linked memory and snapshots are valid, evidenced, audited and not
+blocked by open high or critical incidents.
+
+State records that are stale, deprecated, revoked or missing evidence must not
+be recovered as current operational truth.
 
 ## Non-goals
 
 - No production state machine service is implemented.
 - No database persistence is introduced.
 - No worker execution is introduced.
+- No automatic memory-based recovery is introduced.

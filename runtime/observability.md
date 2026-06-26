@@ -19,6 +19,8 @@ Runtime Observability makes execution reviewable across:
 - Audit entries.
 - Incident records.
 - Rollback references.
+- Runtime memory records.
+- Context snapshots.
 
 ## Minimum observability event
 
@@ -55,6 +57,10 @@ Runtime Observability makes execution reviewable across:
 - Medium, high and critical observability events must link evidence.
 - Failed, blocked, degraded or manual intervention events must link incidents.
 - Rollback-related events must link rollback references and evidence.
+- Memory reuse or context resume events must link memory records, snapshots,
+  evidence and audit.
+- Stale, deprecated or revoked context must be inspectable before it can block
+  resume or recovery.
 
 ## Review fields
 
@@ -72,6 +78,8 @@ Runtime review may inspect observability by:
 - `audit_ref`
 - `incident_ref`
 - `rollback_ref`
+- `context_id`
+- `snapshot_id`
 
 ## Non-goals
 
