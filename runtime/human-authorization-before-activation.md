@@ -33,3 +33,9 @@ Activation requires explicit human authorization for the specific action.
 
 Authorization must be recorded in the relevant decision, audit, readiness and
 activation review records before activation can proceed.
+
+## Relationship with execution authorization layer
+
+Block 12 records human authorization in the execution authorization layer. Any
+change to PR, branch, head SHA, commit, scope or action invalidates prior
+authorization.

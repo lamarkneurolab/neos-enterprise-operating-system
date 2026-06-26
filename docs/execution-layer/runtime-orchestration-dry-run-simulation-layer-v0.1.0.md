@@ -170,3 +170,11 @@ Status: documentary baseline for review.
 Canonical source: GitHub.
 
 Official source format: Markdown.
+
+## Relationship with Block 12 controlled activation
+
+Block 11 simulation results may feed Block 12 controlled activation request
+review. A passed simulation does not authorize execution. Block 12 must define
+the activation request, evidence package, audit requirements, risk acceptance,
+human approval workflow, execution authorization and abort controls before any
+future execution can be considered.

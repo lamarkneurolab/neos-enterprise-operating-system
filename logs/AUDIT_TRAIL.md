@@ -163,3 +163,22 @@ authorization, decisions, evidence, incidents and rollback.
 | `result` | Documentation baseline created and linked. |
 | `risk_level` | `medium` |
 | `notes` | No business agents, operations agents, databases, services, runners, CI, productive automations, dry-run execution, productive orchestration, destructive changes, permission changes, secret administration, dependency installation, external service activation, file deletion or automatic merge. |
+
+## 2026-06-26 — Fase 3 Block 12
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-F3-012` |
+| `timestamp` | `2026-06-26` |
+| `runtime_component` | `runtime-controlled-activation-gate-execution-authorization-layer` |
+| `task_id` | `TASK-NEOS-F3-012` |
+| `event_id` | `EVT-NEOS-F3-012` |
+| `action` | Establish Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 documentary layer. |
+| `authorization_ref` | User authorization to implement Block 12; no merge, execution or activation authorization granted. |
+| `decision_ref` | Decision Log entry for Block 12. |
+| `evidence_ref` | `EVD-NEOS-F3-013`; `TEST-EVD-NEOS-F3-012` |
+| `incident_ref` | `INC-NEOS-F3-012` |
+| `rollback_ref` | Revert Block 12 commit or close PR without merge. |
+| `result` | Documentation baseline created and linked. |
+| `risk_level` | `medium` |
+| `notes` | No business agents, operations agents, databases, services, runners, CI, productive automations, execution authorization, productive orchestration, destructive changes, permission changes, secret administration, dependency installation, external service activation, file deletion or automatic merge. |

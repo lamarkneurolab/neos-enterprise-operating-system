@@ -26,3 +26,8 @@ entries.
 
 Scenario review must record simulated audit when it affects readiness,
 activation posture, rollback or incident response.
+
+## Relationship with activation decision matrix
+
+Dry-run scenarios may support activation decisions, but any activation request
+must be evaluated by `runtime/activation-decision-matrix.md`.

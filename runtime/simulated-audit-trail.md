@@ -29,3 +29,8 @@ activation.
 - Simulated audit must be clearly labeled.
 - Simulated audit must not imply activation approval.
 - Simulated audit must link evidence and result registry entries.
+
+## Relationship with activation audit
+
+Simulated audit may support activation audit requirements, but activation
+authorization requires separate audit records for request, decision and scope.

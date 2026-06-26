@@ -63,3 +63,9 @@ but does not prove real execution.
 Orchestration readiness may allow dry-run review. It does not authorize dry-run
 to become activation. Dry-run result must be reviewed separately before any
 future controlled activation request.
+
+## Relationship with controlled activation gate
+
+Dry-run output may feed `runtime/controlled-activation-gate.md`, but it does
+not authorize execution. A controlled activation request must still pass
+evidence, audit, risk, scope and human authorization review.

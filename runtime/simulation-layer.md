@@ -46,3 +46,10 @@ simulated audit, rollback simulation, incident simulation and final result.
 
 A simulation is invalid when it uses stale inputs, lacks traceability, relies
 on real side effects, omits required evidence or implies activation approval.
+
+## Relationship with execution authorization
+
+Simulation results may support an activation request, but execution
+authorization must be separately recorded in
+`runtime/execution-authorization-layer.md` and cannot be inferred from
+simulation.
