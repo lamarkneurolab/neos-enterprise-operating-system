@@ -22,7 +22,7 @@ invalidation rule and status.
 
 | Date | Scope Lock ID | Activation Session ID | PR | Branch | Head SHA | Commit | Scope | Action | Runtime Window | Evidence | Audit | Status | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-06-26 | SCOPE-LOCK-NEOS-F3-013 | ACT-SESSION-NEOS-F3-013 | pending PR | feature/runtime-controlled-execution-activation-protocol-v0.1.0 | pending head SHA | pending commit | Runtime Controlled Execution Activation Protocol v0.1.0 | documentation review only | EXEC-WIN-NEOS-F3-013 | PRE-ACT-EVD-NEOS-F3-013 | AUD-NEOS-F3-013 | review_required | Any change to PR, branch, SHA, commit, scope, action or window requires renewed review. |
+| 2026-06-26 | SCOPE-LOCK-NEOS-F3-013 | ACT-SESSION-NEOS-F3-013 | #11 | feature/runtime-controlled-execution-activation-protocol-v0.1.0 | 547aa5145e7a832b6bb551b57c6df4f08c3364cd | 547aa5145e7a832b6bb551b57c6df4f08c3364cd | Runtime Controlled Execution Activation Protocol v0.1.0 | documentation review only | EXEC-WIN-NEOS-F3-013 | PRE-ACT-EVD-NEOS-F3-013 | AUD-NEOS-F3-013 | review_required | Any change to PR, branch, SHA, commit, scope, action or window requires renewed review. |
 
 ## v0.1.0 status
 
