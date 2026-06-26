@@ -22,7 +22,7 @@ Preflight checks for documentary simulation only.
 | Date | Preflight ID | Scope | Authorization Posture | Readiness Reference | Evidence Reference | Audit Reference | Rollback Reference | Incident Reference | Status | Reviewer | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-06-26 | PREFLIGHT-NEOS-F3-011 | Runtime Orchestration Dry-Run & Simulation Layer v0.1.0 | PR-specific merge authorization required; activation not authorized | `runtime/orchestration-readiness.md` | TEST-EVD-NEOS-F3-011 | AUD-NEOS-F3-011 | SIM-RB-NEOS-F3-011 | SIM-INC-NEOS-F3-011 | not_run | Codex / NEOS Runtime Governance | Preflight model documented; no real preflight execution. |
-| 2026-06-26 | PREFLIGHT-NEOS-F3-012 | Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 | PR-specific merge authorization required; execution not authorized | `runtime/controlled-activation-gate.md` | TEST-EVD-NEOS-F3-012 | AUD-NEOS-F3-012 | SIM-RB-NEOS-F3-011 | SIM-INC-NEOS-F3-011 | not_run | Codex / NEOS Runtime Governance | Pre-execution authorization checklist documented; no real preflight execution. |
+| 2026-06-26 | PREFLIGHT-NEOS-F3-012 | Runtime Controlled Activation Gate & Execution Authorization Layer v0.1.0 | PR-specific merge authorization required; execution not authorized | `runtime/controlled-activation-gate.md` | TEST-EVD-NEOS-F3-012 | AUD-NEOS-F3-012 | SIM-RB-NEOS-F3-012 | SIM-INC-NEOS-F3-012 | not_run | Codex / NEOS Runtime Governance | Pre-execution authorization checklist documented; no real preflight execution. |
 
 ## v0.1.0 status
 
