@@ -46,6 +46,30 @@ and rollback remain linked for human review.
 | `audit_reference` | Audit log reference. |
 | `payload_summary` | Human-readable event summary. |
 
+## Event Inspection
+
+Event Inspection complements the Block 4 Event Bus contract. It does not
+replace the Event Bus, change its event taxonomy or introduce production event
+transport.
+
+Runtime events should be inspectable by:
+
+| Inspection field | Requirement |
+|---|---|
+| `event_id` | Inspect by unique event identifier. |
+| `event_type` | Inspect by event taxonomy value. |
+| `task_id` | Inspect by linked task. |
+| `runtime_component` | Inspect by source or affected runtime component. |
+| `severity` | Inspect by informational, warning, error or critical severity. |
+| `timestamp` | Inspect by event timestamp. |
+| `state_transition` | Inspect by previous and next state when applicable. |
+| `audit_ref` | Inspect by linked audit entry. |
+| `evidence_ref` | Inspect by linked evidence entry. |
+| `incident_ref` | Inspect by linked incident entry when applicable. |
+
+Inspection fields may be derived from the minimum event record plus Block 5
+observability, audit and incident records.
+
 ## Rules
 
 - Every state transition must emit an event.
@@ -56,6 +80,8 @@ and rollback remain linked for human review.
 - Completed tasks must emit `task.completed`.
 - Rollback requests must emit `task.rollback.requested`.
 - Completed rollback must emit `task.rollback.completed`.
+- Failed, blocked, degraded or manual intervention events must link an incident
+  reference when Block 5 incident records apply.
 
 ## Critical events
 

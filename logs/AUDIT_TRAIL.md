@@ -1,5 +1,27 @@
 # Audit Trail
 
+This log records NEOS governance-relevant runtime actions and their links to
+authorization, decisions, evidence, incidents and rollback.
+
+## Audit entry template
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-YYYY-NNN` |
+| `timestamp` | ISO 8601 timestamp |
+| `runtime_component` | Runtime component responsible for the action |
+| `task_id` | Linked task identifier |
+| `event_id` | Linked Event Bus event identifier |
+| `action` | Audited action or governance-relevant event |
+| `authorization_ref` | Authorization reference |
+| `decision_ref` | Decision log reference |
+| `evidence_ref` | Evidence log reference |
+| `incident_ref` | Incident log reference |
+| `rollback_ref` | Rollback reference |
+| `result` | Action result |
+| `risk_level` | `low`, `medium`, `high` or `critical` |
+| `notes` | Human-readable context |
+
 ## 2026-06-25 — Fase 3 Block 1
 
 - Authorization: explicit user authorization received.
@@ -8,3 +30,22 @@
 - Safe execution path: generate implementation package for Codex or a write-enabled GitHub session.
 - Risk: medium.
 - Rollback: Git revert or branch deletion after implementation.
+
+## 2026-06-25 — Fase 3 Block 5
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-F3-005` |
+| `timestamp` | `2026-06-25` |
+| `runtime_component` | `runtime-observability-audit-trail` |
+| `task_id` | `TASK-NEOS-F3-005` |
+| `event_id` | `EVT-NEOS-F3-005` |
+| `action` | Establish Runtime Observability & Audit Trail v0.1.0 documentary layer. |
+| `authorization_ref` | User authorization to implement Block 5. |
+| `decision_ref` | Decision Log entry for Block 5. |
+| `evidence_ref` | `EVD-NEOS-F3-006` |
+| `incident_ref` | `INC-NEOS-F3-000` |
+| `rollback_ref` | Revert Block 5 commit or close PR without merge. |
+| `result` | Documentation baseline created and linked. |
+| `risk_level` | `medium` |
+| `notes` | No business agents, destructive changes, permission changes, secret administration or automatic merge. |

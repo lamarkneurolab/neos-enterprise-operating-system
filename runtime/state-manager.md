@@ -57,6 +57,8 @@ evidence, audit or rollback requirements.
 - Runtime must not skip states.
 - Every state transition must be logged.
 - Invalid transitions must be blocked.
+- Invalid transitions must be inspectable through Runtime Observability.
+- Invalid transitions must link an incident record when closure is blocked.
 - Rollback states require evidence before closure.
 - `queued` tasks cannot enter `in_progress` directly.
 - `blocked` or rejected tasks cannot enter `in_progress`.
@@ -102,6 +104,22 @@ A task enters `failed` when:
 - Required evidence cannot be produced.
 - Required audit linkage cannot be produced.
 - Rollback cannot complete from `rollback_requested`.
+
+## Observability and incident linkage
+
+State transitions should preserve Block 5 links when applicable:
+
+| State condition | Required Block 5 link |
+|---|---|
+| Valid transition | Observability event and Event Bus event. |
+| Invalid transition | `invalid_state_transition` incident. |
+| Missing evidence | `missing_evidence` incident. |
+| Missing audit | `missing_audit_entry` incident. |
+| Rollback failure | `rollback_failure` incident. |
+| Manual remediation | `manual_intervention_required` incident. |
+
+Observability and incident records do not change state by themselves. They
+preserve the review trail for state decisions already governed by this contract.
 
 ## Non-goals
 
