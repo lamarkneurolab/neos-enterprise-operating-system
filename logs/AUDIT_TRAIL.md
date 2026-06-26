@@ -68,3 +68,22 @@ authorization, decisions, evidence, incidents and rollback.
 | `result` | Documentation baseline created and linked. |
 | `risk_level` | `medium` |
 | `notes` | No business agents, databases, services, destructive changes, permission changes, secret administration, dependency installation or automatic merge. |
+
+## 2026-06-26 — Fase 3 Block 7
+
+| Field | Value |
+|---|---|
+| `audit_id` | `AUD-NEOS-F3-007` |
+| `timestamp` | `2026-06-26` |
+| `runtime_component` | `runtime-sdk-integration-contracts` |
+| `task_id` | `TASK-NEOS-F3-007` |
+| `event_id` | `EVT-NEOS-F3-007` |
+| `action` | Establish Runtime SDK & Integration Contracts v0.1.0 documentary layer. |
+| `authorization_ref` | User authorization to implement Block 7. |
+| `decision_ref` | Decision Log entry for Block 7. |
+| `evidence_ref` | `EVD-NEOS-F3-008` |
+| `incident_ref` | `INC-NEOS-F3-007` |
+| `rollback_ref` | Revert Block 7 commit or close PR without merge. |
+| `result` | Documentation baseline created and linked. |
+| `risk_level` | `medium` |
+| `notes` | No business agents, databases, services, destructive changes, permission changes, secret administration, dependency installation, external connector execution or automatic merge. |

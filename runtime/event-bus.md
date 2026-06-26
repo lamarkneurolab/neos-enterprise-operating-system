@@ -27,6 +27,14 @@ and rollback remain linked for human review.
 | `state.transitioned` | A task state changed. |
 | `evidence.created` | Evidence was created or linked. |
 | `audit.logged` | Audit information was recorded. |
+| `sdk.contract.registered` | A Runtime SDK contract was registered or versioned. |
+| `sdk.invocation.requested` | A governed SDK invocation was requested. |
+| `sdk.invocation.completed` | A governed SDK invocation completed with evidence. |
+| `sdk.invocation.failed` | A governed SDK invocation failed or was blocked. |
+| `integration.contract.registered` | An integration contract was registered or versioned. |
+| `integration.entry.requested` | A governed integration entry point was requested. |
+| `integration.exit.completed` | A governed integration exit point completed with evidence. |
+| `integration.execution.blocked` | Integration execution was blocked by authorization or boundary rules. |
 
 ## Minimum event record
 
@@ -82,6 +90,8 @@ observability, audit and incident records.
 - Completed rollback must emit `task.rollback.completed`.
 - Failed, blocked, degraded or manual intervention events must link an incident
   reference when Block 5 incident records apply.
+- SDK and integration events are documentary traceability events in v0.1.0 and
+  must not introduce a production event broker or execute connectors.
 
 ## Critical events
 

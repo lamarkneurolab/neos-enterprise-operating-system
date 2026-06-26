@@ -64,6 +64,10 @@ snapshots, decisions, evidence, audit, incidents and rollback references.
 - Context contradicted by a later decision must be marked `deprecated` or
   `revoked`.
 - Prohibited memory must not be represented as valid context.
+- SDK and integration context references must include the relevant contract id
+  when contract use affects resume, recovery, rollback, audit or evidence.
+- External execution context must not be persisted as valid context in Block 7
+  because real external execution is out of scope.
 
 ## Non-goals
 

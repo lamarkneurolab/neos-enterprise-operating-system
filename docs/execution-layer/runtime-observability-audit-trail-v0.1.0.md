@@ -38,6 +38,7 @@ Included:
 - Execution Metrics.
 - Runtime Review Checklist.
 - Required links to decisions, evidence, state transitions, events and rollback.
+- SDK and integration contract observability linkage.
 
 ## Non-goals
 
@@ -65,6 +66,7 @@ Authorization Flow
   -> State Manager
   -> Runtime Observability
   -> Audit Trail / Incident Records
+  -> Runtime SDK / Integration Contract Review
   -> Execution State Log
   -> Evidence / Decisions / Rollback
 ```
@@ -72,6 +74,10 @@ Authorization Flow
 Runtime Observability records, classifies and inspects. It does not execute
 actions by itself. Audit Trail records governance-relevant operational facts.
 Incident Records preserve failure, degraded or blocked conditions.
+
+SDK and integration contract review is observable and auditable when it affects
+runtime governance, compatibility, external execution boundaries, evidence or
+rollback.
 
 ## Runtime Observability
 

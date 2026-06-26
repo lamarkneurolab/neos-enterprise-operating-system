@@ -139,6 +139,28 @@ Stale, deprecated, revoked, unaudited or prohibited memory must block resume
 until review. Context involving open high or critical incidents must not be
 treated as resumable without explicit review.
 
+## Runtime SDK and Integration Contracts
+
+Runtime SDK and Integration Contracts define the documented invocation and
+interface surface for future NEOS modules and integrations.
+
+The Execution Engine must treat SDK and integration activity as governed
+runtime work. It must preserve links between:
+
+- `runtime/sdk.md`
+- `runtime/integration-contracts.md`
+- `runtime/internal-interfaces.md`
+- `runtime/extension-rules.md`
+- `runtime/external-execution-boundaries.md`
+- `runtime/sdk-versioning.md`
+- `runtime/compatibility-matrix.md`
+- `logs/SDK_CONTRACT_LOG.md`
+- `logs/INTEGRATION_CONTRACT_LOG.md`
+
+SDK and integration contracts do not authorize work, execute connectors, mutate
+state, manage secrets or change permissions by themselves. External execution
+is blocked by default unless separately authorized and evidenced.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -155,6 +177,9 @@ Before an execution is considered closed, review:
 10. Was persisted context reviewed before reuse?
 11. Was a snapshot created when resume or recovery may be needed?
 12. Are memory retention and risk levels documented?
+13. Are SDK and integration contract boundaries respected?
+14. Is compatibility with Blocks 1-6 preserved?
+15. Is external execution blocked unless explicitly authorized?
 
 ## Evidence and audit
 

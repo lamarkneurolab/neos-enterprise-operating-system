@@ -134,6 +134,22 @@ blocked by open high or critical incidents.
 State records that are stale, deprecated, revoked or missing evidence must not
 be recovered as current operational truth.
 
+## SDK and integration linkage
+
+SDK invocations and integration entry points must follow the same state rules
+as other runtime work.
+
+| Condition | State rule |
+|---|---|
+| SDK invocation requested | Task must already be `authorized`. |
+| Integration entry requested | Registry, authorization and boundary checks must be complete. |
+| External execution blocked | Move to `blocked` or `failed` with evidence. |
+| Contract validation failed | Move to `failed` and link incident when closure is affected. |
+| Rollback required | Move through `rollback_requested` before `rolled_back`. |
+
+No SDK or integration contract may move a task directly from `queued` to
+`in_progress` or from `failed` to `completed`.
+
 ## Non-goals
 
 - No production state machine service is implemented.
