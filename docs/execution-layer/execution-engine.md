@@ -258,6 +258,36 @@ Orchestration eligibility does not mean orchestration approval. Future
 orchestration remains blocked unless validation, evidence, audit, rollback
 readiness and required human authorization are complete for the specific scope.
 
+## Runtime Orchestration Dry-Run and Simulation Layer
+
+Runtime Orchestration Dry-Run and Simulation Layer defines the documentary
+rehearsal surface required before any future activation can be considered.
+
+The Execution Engine must preserve links between:
+
+- `runtime/orchestration-dry-run.md`
+- `runtime/simulation-layer.md`
+- `runtime/no-op-execution-model.md`
+- `runtime/preflight-checks.md`
+- `runtime/dry-run-validation-scenarios.md`
+- `runtime/simulated-evidence-collection.md`
+- `runtime/simulated-audit-trail.md`
+- `runtime/simulated-rollback-flow.md`
+- `runtime/incident-simulation.md`
+- `runtime/simulation-result-registry.md`
+- `runtime/dry-run-pass-fail-criteria.md`
+- `runtime/controlled-activation-preconditions.md`
+- `runtime/human-authorization-before-activation.md`
+- `logs/DRY_RUN_SIMULATION_LOG.md`
+- `logs/SIMULATION_RESULT_REGISTRY_LOG.md`
+- `logs/PREFLIGHT_CHECK_LOG.md`
+- `logs/SIMULATED_ROLLBACK_LOG.md`
+- `logs/INCIDENT_SIMULATION_LOG.md`
+
+Before any future activation, the dry-run and simulation layer must be
+validated. Dry-run does not execute, simulation does not authorize, no-op does
+not modify real state and simulation passed does not mean activation approved.
+
 ## Runtime Review Checklist
 
 Before an execution is considered closed, review:
@@ -287,6 +317,9 @@ Before an execution is considered closed, review:
 23. Is orchestration readiness separated from execution authorization?
 24. Are playbook, rollback, evidence, audit and incident response references documented?
 25. Is human authorization specific to the branch, PR, head SHA and action when applicable?
+26. Has dry-run simulation been completed before any future activation request?
+27. Are no-op, simulated evidence, simulated audit, simulated rollback and incident simulation records linked?
+28. Is activation blocked unless explicit human authorization exists for the exact future scope?
 
 ## Evidence and audit
 
@@ -314,6 +347,11 @@ Orchestration readiness reviews belong in
 Execution playbook reviews belong in `logs/EXECUTION_PLAYBOOK_LOG.md`.
 Incident response playbook reviews belong in
 `logs/INCIDENT_RESPONSE_PLAYBOOK_LOG.md`.
+Dry-run simulation reviews belong in `logs/DRY_RUN_SIMULATION_LOG.md`.
+Simulation results belong in `logs/SIMULATION_RESULT_REGISTRY_LOG.md`.
+Preflight checks belong in `logs/PREFLIGHT_CHECK_LOG.md`.
+Simulated rollback belongs in `logs/SIMULATED_ROLLBACK_LOG.md`.
+Incident simulation belongs in `logs/INCIDENT_SIMULATION_LOG.md`.
 
 ## Rollback
 

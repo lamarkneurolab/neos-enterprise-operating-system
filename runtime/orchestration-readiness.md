@@ -72,3 +72,10 @@ blocked.
 - Open governance or certification blocker.
 - Missing, expired or non-specific human authorization.
 - Any attempt to create prohibited agents or activate productive execution.
+
+## Relationship with dry-run simulation
+
+Orchestration readiness may allow a future capability to enter dry-run
+simulation review. It does not authorize activation. Block 11 dry-run,
+preflight, no-op, simulated evidence, simulated audit, simulated rollback and
+incident simulation must be reviewed before any future activation request.

@@ -9,6 +9,7 @@
 | 2026-06-26 | STATE-NEOS-F3-008 | TASK-NEOS-F3-008 | EVT-NEOS-F3-008 | authorized     | completed  | Block 8 runtime certification, governance gates, readiness certifications, evidence sufficiency, audit sufficiency, human authorization gates, critical decision gates and release candidate review baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-009 | Revert Block 8 commit or close PR without merge |
 | 2026-06-26 | STATE-NEOS-F3-009 | TASK-NEOS-F3-009 | EVT-NEOS-F3-009 | authorized     | completed  | Block 9 runtime testing harness, validation scenarios, test case registry, contract validation, failure validation, regression validation and release readiness validation baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-010 | Revert Block 9 commit or close PR without merge |
 | 2026-06-26 | STATE-NEOS-F3-010 | TASK-NEOS-F3-010 | EVT-NEOS-F3-010 | authorized     | completed  | Block 10 runtime orchestration readiness, execution playbooks, runbooks, rollback playbooks, evidence collection, audit playbooks, incident response playbooks and authorization-before-orchestration baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-011 | Revert Block 10 commit or close PR without merge |
+| 2026-06-26 | STATE-NEOS-F3-011 | TASK-NEOS-F3-011 | EVT-NEOS-F3-011 | authorized     | completed  | Block 11 runtime orchestration dry-run, simulation layer, no-op model, preflight checks, simulated evidence, simulated audit, simulated rollback, incident simulation and activation preconditions baseline documented | Codex / NEOS Runtime Governance | EVD-NEOS-F3-012 | Revert Block 11 commit or close PR without merge |
 
 ## Block 5 runtime review links
 
@@ -45,3 +46,9 @@
 | Task ID | Readiness / Playbooks | Operational Controls | Validation / Authorization | Review Logs |
 |---|---|---|---|---|
 | `TASK-NEOS-F3-010` | `runtime/orchestration-readiness.md`; `runtime/execution-playbooks.md`; `runtime/pre-orchestration-checklist.md`; `runtime/controlled-execution-sequences.md`; `runtime/operational-runbooks.md` | `runtime/rollback-playbooks.md`; `runtime/evidence-collection-playbooks.md`; `runtime/audit-playbooks.md`; `runtime/incident-response-playbooks.md` | `runtime/validation-before-execution-rules.md`; `runtime/human-authorization-before-orchestration.md`; `runtime/release-to-orchestration-criteria.md` | `logs/ORCHESTRATION_READINESS_LOG.md`; `logs/EXECUTION_PLAYBOOK_LOG.md`; `logs/INCIDENT_RESPONSE_PLAYBOOK_LOG.md` |
+
+## Block 11 dry-run simulation review links
+
+| Task ID | Dry-Run / Simulation | Simulated Controls | Activation Preconditions | Review Logs |
+|---|---|---|---|---|
+| `TASK-NEOS-F3-011` | `runtime/orchestration-dry-run.md`; `runtime/simulation-layer.md`; `runtime/no-op-execution-model.md`; `runtime/preflight-checks.md`; `runtime/dry-run-validation-scenarios.md` | `runtime/simulated-evidence-collection.md`; `runtime/simulated-audit-trail.md`; `runtime/simulated-rollback-flow.md`; `runtime/incident-simulation.md`; `runtime/simulation-result-registry.md`; `runtime/dry-run-pass-fail-criteria.md` | `runtime/controlled-activation-preconditions.md`; `runtime/human-authorization-before-activation.md` | `logs/DRY_RUN_SIMULATION_LOG.md`; `logs/SIMULATION_RESULT_REGISTRY_LOG.md`; `logs/PREFLIGHT_CHECK_LOG.md`; `logs/SIMULATED_ROLLBACK_LOG.md`; `logs/INCIDENT_SIMULATION_LOG.md` |

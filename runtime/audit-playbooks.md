@@ -37,3 +37,8 @@ closure.
 - Rollback and incident decisions must preserve sequence and reviewer.
 - Audit entries must not imply execution approval unless the approved action,
   scope and authorization are explicit.
+
+## Relationship with simulated audit
+
+Block 11 simulated audit supports dry-run review only. Simulated audit must not
+replace real audit required for a future authorized activation.

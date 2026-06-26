@@ -38,3 +38,9 @@ No playbook activates execution by itself.
 Execution remains blocked until validation, evidence, audit, rollback,
 incident response mapping and required human authorization are complete for the
 specific scope.
+
+## Relationship with dry-run simulation
+
+Execution playbooks must be rehearsed through dry-run/no-op simulation before
+any future activation request. A playbook that passes simulation still does not
+authorize activation.

@@ -41,3 +41,9 @@ traceable to scope and linked to audit when governance-relevant.
 
 Missing, stale, ambiguous, fabricated or scope-mismatched evidence blocks
 readiness, approval and closure.
+
+## Relationship with simulated evidence
+
+Block 11 simulated evidence supports dry-run review only. Simulated evidence
+must be labeled as simulated and must not be treated as proof of real
+execution.

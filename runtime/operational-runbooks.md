@@ -39,3 +39,8 @@ Neither a runbook nor a playbook authorizes productive execution by itself.
 Block 10 runbooks must not execute real productive operations, activate
 external systems, create agents, change permissions, manage secrets or install
 dependencies.
+
+## Relationship with simulation runbooks
+
+Operational runbooks may provide inputs to Block 11 dry-run simulation. Runbook
+review remains documentary and must not be treated as activation approval.

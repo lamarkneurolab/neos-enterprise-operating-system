@@ -3,7 +3,7 @@
 Execution engine, runtime flow, authorization, task queue, event bus,
 verification, observability, memory, SDK contracts, integration contracts,
 certification, governance gates, testing, validation, orchestration readiness
-and execution playbooks.
+execution playbooks, dry-run and simulation.
 
 ## Fase 3 blocks
 
@@ -17,3 +17,4 @@ and execution playbooks.
 | Runtime Certification & Governance Gates v0.1.0 | `runtime-certification-governance-gates-v0.1.0.md` |
 | Runtime Testing & Validation Harness v0.1.0 | `runtime-testing-validation-harness-v0.1.0.md` |
 | Runtime Orchestration Readiness & Execution Playbooks v0.1.0 | `runtime-orchestration-readiness-execution-playbooks-v0.1.0.md` |
+| Runtime Orchestration Dry-Run & Simulation Layer v0.1.0 | `runtime-orchestration-dry-run-simulation-layer-v0.1.0.md` |

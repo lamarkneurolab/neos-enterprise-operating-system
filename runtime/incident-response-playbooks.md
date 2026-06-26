@@ -62,3 +62,9 @@ closure.
 Human escalation is required when severity is high or critical, authorization
 is missing, productive execution is attempted, rollback is blocked or scope is
 ambiguous.
+
+## Relationship with incident simulation
+
+Incident response playbooks must be rehearsed through
+`runtime/incident-simulation.md` before future activation can be considered.
+Incident simulation is documentary and does not activate operational response.
